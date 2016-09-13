@@ -28,6 +28,8 @@ public class readFile{
 	while(limit>0){
 		
 	String a=x.next();
+
+	//Skipping 'Grid number' from the file
 	if(Character.isLetter(a.charAt(0))){
 		t=true;
 		limit--;
@@ -42,6 +44,7 @@ public class readFile{
 	else{
 	int[] resultArray = new int[32];
 	Integer ii;
+	//Spliting the read line and adding it to an integer array
     String[] temp = a.split("");
     ii = 0;
     for(String s: temp) {
@@ -53,6 +56,8 @@ public class readFile{
     }
 
     int n = ii;
+
+    // converting the sudoku read to a 2d array
     for (ii = 0; ii < n; ii++) {
     
       array[jj][ii]=resultArray[ii];
@@ -64,7 +69,7 @@ public class readFile{
 	limit--;
 }
 
-
+//returning each sudoku
 return array;
 	}
 

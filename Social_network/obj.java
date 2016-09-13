@@ -33,7 +33,7 @@ public class obj implements factory {
             case "twiter":
                 System.out.println("You choose Twitter");
                 break;
-                default:
+            default:
                 System.out.println("Wrong choice!!");
     
         }

@@ -111,7 +111,9 @@ System.out.println("+-----+-----+-----+");
 	while(t>0)
 	{
 	readFile r= new readFile();
+    //open file
 	r.openFile();
+    //reading each sodoku to board... Grid 01 takes two next()
 	board=r.readfile(nextval*11);
 		/*	for(int i = 0; i<9; i++)
 		{
@@ -122,8 +124,9 @@ System.out.println("+-----+-----+-----+");
 		    System.out.println();
 		}*/
 
-
+    //Passing the read board to solve method
 	if (solve(board)){
+    //Printing the solved board
     	printBoard(board);
     	System.out.println();
     }
