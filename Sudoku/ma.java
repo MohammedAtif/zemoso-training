@@ -1,4 +1,5 @@
 class ma{
+    public static int sumofall=0;
 	
 
 
@@ -10,14 +11,14 @@ for (int x=x1; x<=x2; x++) {
 if (board[x][y] > 0) {
     if (isPresent[board[x][y]]) {
 //System.out.println(errormsg + ": multiple " + board[x][y] + "s");
-return false;
+    return false;
     }
     isPresent[board[x][y]] = true;
-}
+            }
+        }
     }
-}
 return true;
-    }
+}
   
     public static boolean isLegal(int[][] board) {
 // Check the nine blocks.
@@ -65,9 +66,9 @@ if (board[x][y] == 0) {
     // Try each possibile value in this space
     // and see if the rest of the puzzle can be filled in.
     for (board[x][y]=1; board[x][y]<=9; board[x][y]++) {
-if (isLegal(board) && solve(board)) {
-    return true;
-}
+        if (isLegal(board) && solve(board)) {
+            return true;
+        }
     }
   
     // There is no value that we can put in the first
@@ -93,10 +94,19 @@ System.out.print((y%3==0 ? "|" : " ") + board[x][y]);
     System.out.println("|");
 }
 System.out.println("+-----+-----+-----+");
+
+int vvalue=board[0][0]*100+board[0][1]*10+board[0][2];
+System.out.println();
+System.out.println(vvalue);
+System.out.println();
+sumofall=sumofall+vvalue;
+
     }
 
 
-
+public static void dispsum(){
+    System.out.println("Sum="+sumofall);
+}
 
 
 
@@ -139,6 +149,8 @@ System.out.println("+-----+-----+-----+");
 	nextval++;
 	//System.out.println();
 	}
+
+    dispsum();
 	
 }
 }
