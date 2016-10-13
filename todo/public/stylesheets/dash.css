@@ -1,0 +1,182 @@
+.todo{
+    height: 400px;
+    width:80%;
+    background-color:#e6e6e6;
+    border-radius: 10px;
+    border: solid #e6e6e6 8px;
+}
+.doing{
+    height: 400px;
+    width:80%;
+    background-color:#e6e6e6;
+    border-radius: 10px;
+    border: solid #e6e6e6 8px;
+}
+.done{
+    height: 400px;
+    width:80%;
+    background-color:#e6e6e6;
+    border-radius: 10px;
+    border: solid #e6e6e6 8px;
+}
+.dash{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.block-inside{
+    position:relative;
+}
+.text_block_button {
+    position: absolute;
+    margin-left: -50px;
+    left: 50%;
+    width: 100px;
+    bottom: 0px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow-y: initial !important
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: table;
+    overflow-y: auto;
+
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*#ScrollStyle{
+    max-height: 290px;
+    overflow-y: scroll;
+    margin: auto;
+    position:absolute;
+    width: 100%;
+}*/
+.eachTask{
+    padding-top: 4px;
+    padding-left: 20px;
+    padding-right: 15px;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 1px #d4d4d4;
+    z-index: 1;
+}
+.eachTask:hover{
+    background-color: #ecf0f1;
+    cursor: default; !important;
+}
+.padtop{
+    padding-top: 50px;
+}
+#time{
+ color: #4d4d4d;
+    font-size: 10px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+#white{
+    color: white; !important;
+}
+a:visited{
+    color: white;
+}
+
+
+.dropzone {
+    transition: background-color 0.3s;
+}
+
+.drop-active {
+    border-color: #aaa;
+}
+
+.drop-target {
+    background-color: #29e;
+    border-color: #fff;
+    border-style: solid;
+}
+
+.drag-drop {
+    display: inline-block;
+    color: #fff;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+    color: #000;
+    background-color: #4e4;
+ }
+
+ .hidden{
+     display:none;
+ }
+
+
+.unhidden{
+    display:block;
+ }
+#blu{
+    color: #2aabd2;
+}
+.bigbutton {
+    width:100px;
+    background: #3e9cbf; /*the colour of the button*/
+    padding: 8px 14px 10px; /*apply some padding inside the button*/
+    border:1px solid #3e9cbf; /*required or the default border for the browser will appear*/
+    cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    /*style the text*/
+    font-size:12px;
+    font-family:'Roboto', sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+    letter-spacing:.1em;
+    text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+    color: #fff;
+    /*give the corners a small curve*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.nolink a{
+    color: #000000;
+    text-decoration: none;
+}

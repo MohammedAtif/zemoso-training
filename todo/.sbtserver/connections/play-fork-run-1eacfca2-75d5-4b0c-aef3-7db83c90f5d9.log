@@ -1,0 +1,9 @@
+New log file opened at Wed Oct 12 15:33:47 IST 2016 by 3574@zemoso-Lenovo-G580
+Sending msg to client play-fork-run-1eacfca2-75d5-4b0c-aef3-7db83c90f5d9: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /home/zemoso/play/todo/.sbtserver/connections/master.log))
+Sending msg to client play-fork-run-1eacfca2-75d5-4b0c-aef3-7db83c90f5d9: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /home/zemoso/play/todo/.sbtserver/master.log))
+Sending msg to client play-fork-run-1eacfca2-75d5-4b0c-aef3-7db83c90f5d9: DetachedLogEvent(LogMessage(debug,sbt client logs are in: /home/zemoso/play/todo/.sbtserver/connections/play-fork-run-1eacfca2-75d5-4b0c-aef3-7db83c90f5d9.log))
+Reading next message from client.
+Client play-fork-run-1eacfca2-75d5-4b0c-aef3-7db83c90f5d9 EOF, shutting down.
+Stopping client.
+Client play-fork-run-1eacfca2-75d5-4b0c-aef3-7db83c90f5d9 thread exiting.
+Dropping message (0,ReceivedResponse()) to dead client play-fork-run-1eacfca2-75d5-4b0c-aef3-7db83c90f5d9
