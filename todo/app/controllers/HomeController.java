@@ -75,10 +75,6 @@ public class HomeController extends Controller {
     public Result postTask() throws IOException {
 
         Tasks task=form(Tasks.class).bindFromRequest().get();
-        if(task.imageurl!=null) {
-            File afile = new File(task.imageurl);
-            task.imageurl="public/Uploads/"+ afile.getName();
-        }
         try{
         task.save();
         }

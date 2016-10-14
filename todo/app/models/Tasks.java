@@ -22,13 +22,11 @@ public class Tasks extends Model{
     public String title;
     public String description;
     public String lastUpdated;
-    public String imageurl;
     public String list;
+    public String listTF;
 
 
-    public long getId(){
-        return id;
-    }
+    public long getId(){ return id; }
     public String getStatus(){
         return status;
     }
@@ -42,6 +40,6 @@ public class Tasks extends Model{
     public String getLastUpdated(){
         return lastUpdated;
     }
-    public String getImageurl(){ return imageurl; }
     public String getList(){ return list; }
+    public String getListTF(){ return listTF; }
 }

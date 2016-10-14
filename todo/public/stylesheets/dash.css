@@ -102,6 +102,9 @@
 }
 .padtop{
     padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
 }
 #time{
  color: #4d4d4d;
@@ -166,6 +169,7 @@ a:visited{
     border:1px solid #3e9cbf; /*required or the default border for the browser will appear*/
     cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
     /*style the text*/
+
     font-size:12px;
     font-family:'Roboto', sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
     letter-spacing:.1em;
@@ -179,4 +183,8 @@ a:visited{
 .nolink a{
     color: #000000;
     text-decoration: none;
+}
+.droppable{
+    width: 100%;
+    height: 100%;
 }

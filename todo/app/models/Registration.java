@@ -24,7 +24,7 @@ public class Registration extends Model{
     public String name;
     public String email;
     public String password;
-    
+
     public static Registration authenticate(String email, String password) {
         return find.where().eq("email", email)
                 .eq("password", password).findUnique();

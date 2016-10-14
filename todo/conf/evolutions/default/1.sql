@@ -24,8 +24,8 @@ create table tasks (
   title                         varchar(255),
   description                   varchar(255),
   last_updated                  varchar(255),
-  imageurl                      varchar(255),
   list                          varchar(255),
+  list_tf                       varchar(255),
   constraint pk_tasks primary key (id)
 );
 

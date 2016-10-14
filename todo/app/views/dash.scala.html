@@ -4,7 +4,10 @@
 <!-- Header      -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <div class="container">
         <div class="row">
             <div class="col-md-9">
@@ -20,125 +23,133 @@
   <div class="col-lg-4">
     <div class="todo block-inside">
       <label class="control-label col-md-3 text-right">To Do</label>
-        <div class="padtop">
-            <div id="ScrollStyle">
-            @for(t <- tasks) {
-                @if(t.getStatus()=="1"&&t.getUser.equals(userEmail)){
-                    <div  class="draggable ui-widget-content eachTask">
-                        <div class="left">@t.getTitle()</div>  <div class="right">
-                            <i id="blu" class="fa fa-pencil fa-2x" aria-hidden="true" onclick="edit('@t.getId','@t.getTitle','@t.getDescription','@t.getList','@t.getStatus')"></i> <a href="@routes.HomeController.del(t.getId)" onclick="return confirm('Are you sure?')"> <i id="blu" class="fa fa-trash fa-2x" aria-hidden="true"></i></a></div>
-                            <br>
-                            <input type="hidden" value=@t.getId()>
-                            <h6 id="time" align="right">@t.getLastUpdated()</h6>
+            <div class="padtop">
+                <div class="droppable sortable">
+                    <div id="ScrollStyle">
+                        @for(t <- tasks) {
+                            @if(t.getStatus()=="1"&&t.getUser.equals(userEmail)){
+                                <div  class="draggable ui-widget-content eachTask">
+                                    <div class="left">@t.getTitle()</div>  <div class="right">
+                                        <i id="blu" class="fa fa-pencil fa-2x" aria-hidden="true" onclick="edit('@t.getId','@t.getTitle','@t.getDescription','@t.getList','@t.getListTF','@t.getStatus')"></i> <a href="@routes.HomeController.del(t.getId)" onclick="return confirm('Are you sure?')"> <i id="blu" class="fa fa-trash fa-2x" aria-hidden="true"></i></a></div>
+                                        <br>
+                                        <input type="hidden" value=@t.getId()>
+                                        <h6 id="time" align="right">@t.getLastUpdated()</h6>
+                                </div>
+                            }
+                        }
                     </div>
-                }
-            }
+                </div>
             </div>
-        </div>
         <input id="myBtn1" class="text_block_button" type="submit" value="Add" />
     </div>
   </div>
 <!--Doing Block -->
-  <div class="col-lg-4">
-    <div class="doing block-inside droppable">
-      <label class="control-label col-md-3 text-right">Doing</label>
-        <div class="padtop">
-            <div id="ScrollStyle">
-            @for(t <- tasks) {
-                @if(t.getStatus()=="2"&&t.getUser.equals(userEmail)){
-                    <div id="drag-1" class="draggable eachTask"><div class="right"><i id="blu" class="fa fa-pencil fa-2x" aria-hidden="true" onclick="edit('@t.getId','@t.getTitle','@t.getDescription','@t.getList','@t.getStatus')"></i><a href="@routes.HomeController.del(t.getId)"> <i id="blu" class="fa fa-trash fa-2x" aria-hidden="true"></i></a></div>
-                    <div class="left">@t.getTitle()</div><br>
-                        <input type="hidden" value=@t.getId()>
-                        <h6 id="time" align="right">@t.getLastUpdated()</h6>
+        <div class="col-lg-4">
+            <div class="doing block-inside">
+                <label class="control-label col-md-3 text-right">Doing</label>
+                <div class="padtop">
+                    <div class="droppable sortable">
+                        <div id="ScrollStyle">
+                        @for(t <- tasks) {
+                            @if(t.getStatus()=="2"&&t.getUser.equals(userEmail)){
+                                <div  class="draggable ui-widget-content eachTask">
+                                    <div class="left">@t.getTitle()</div>  <div class="right">
+                                    <i id="blu" class="fa fa-pencil fa-2x" aria-hidden="true" onclick="edit('@t.getId','@t.getTitle','@t.getDescription','@t.getList','@t.getListTF','@t.getStatus')"></i> <a href="@routes.HomeController.del(t.getId)" onclick="return confirm('Are you sure?')"> <i id="blu" class="fa fa-trash fa-2x" aria-hidden="true"></i></a></div>
+                                    <br>
+                                    <input type="hidden" value=@t.getId()>
+                                    <h6 id="time" align="right">@t.getLastUpdated()</h6>
+                                </div>
+                            }
+                        }
+                        </div>
                     </div>
-                }
-            }
+                </div>
+                <input id="myBtn2" class="text_block_button" type="submit" value="Add" />
             </div>
         </div>
-      <input id="myBtn2" class="text_block_button" type="submit" value="Add" />
-    </div>
-  </div>
 <!-- Done Block-->
-  <div class="col-lg-4">
-    <div class="done block-inside">
-      <label class="control-label col-md-3 text-right">Done</label>
-        <div class="padtop">
-            <div id="ScrollStyle">
-            @for(t <- tasks) {
-                @if(t.getStatus()=="3"&&t.getUser.equals(userEmail)){
-                    <div class="draggable eachTask"><div class="right"><i id="blu" class="fa fa-pencil fa-2x" aria-hidden="true" onclick="edit('@t.getId','@t.getTitle','@t.getDescription','@t.getList','@t.getStatus')"></i><a href="@routes.HomeController.del(t.getId)"> <i id="blu" class="fa fa-trash fa-2x" aria-hidden="true"></i></a></div>
-                        <div class="left">@t.getTitle()</div><br>
-                        <input type="hidden" value=@t.getId()>
-                        <h6 id="time" align="right">@t.getLastUpdated()</h6>
+        <div class="col-lg-4">
+            <div class="done block-inside">
+                <label class="control-label col-md-3 text-right">Done</label>
+                <div class="padtop">
+                    <div class="droppable sortable">
+                        <div id="ScrollStyle">
+                        @for(t <- tasks) {
+                            @if(t.getStatus()=="3"&&t.getUser.equals(userEmail)){
+                                <div  class="draggable ui-widget-content eachTask">
+                                    <div class="left">@t.getTitle()</div>  <div class="right">
+                                    <i id="blu" class="fa fa-pencil fa-2x" aria-hidden="true" onclick="edit('@t.getId','@t.getTitle','@t.getDescription','@t.getList','@t.getListTF','@t.getStatus')"></i> <a href="@routes.HomeController.del(t.getId)" onclick="return confirm('Are you sure?')"> <i id="blu" class="fa fa-trash fa-2x" aria-hidden="true"></i></a></div>
+                                    <br>
+                                    <input type="hidden" value=@t.getId()>
+                                    <h6 id="time" align="right">@t.getLastUpdated()</h6>
+                                </div>
+                            }
+                        }
+                        </div>
                     </div>
-                }
-            }
+                </div>
+                <input id="myBtn3" class="text_block_button" type="submit" value="Add" />
             </div>
         </div>
-      <input id="myBtn3" class="text_block_button" type="submit" value="Add" />
-    </div>
-  </div>
-
-    </div>
 
     <!-- The Modal -->
   <div id="myModal" class="modal">
 
       <!-- Modal content -->
     <div id="modal-id" class="nolink modal-content">
-      <span class="close"><a href="@routes.HomeController.Dash()">×</a></span>
+        <span class="close"><a href="@routes.HomeController.Dash()">×</a></span>
         <div class="form-group" align="center">
           <h1 class="headings">Add Task</h1>
         </div>
         <form id="regForm" name="regForm" action="@routes.HomeController.postTask()" method="post">
-            <input id="id" type="hidden" name="id">
-            <input id="date" type="hidden" name="lastUpdated" >
-            <input name="user" type="hidden" value=@userEmail>
-            <input name="status" type="hidden" id="statusid">
+                <input id="id" type="hidden" name="id">
+                <input id="date" type="hidden" name="lastUpdated" >
+                <input name="user" type="hidden" value=@userEmail>
+                <input name="status" type="hidden" id="statusid">
                 <div class="form-group">
                     <label class="control-label col-md-3 text-right">Title</label>
-                    <div class="input-group col-md-7">
+                    <div class="col-md-7">
                       <input id="title" class="form-control" type="text" name="title" ng-model="title" required>
-                      <span class="error" ng-show="regForm.title.$touched && regForm.title.$invalid">*This field is mandatory.</span>
+                      <span class="error" ng-show="regForm.$invalid">*This field is mandatory.</span>
+                        <!--<div id="err" class="unhidden"> <label class="error" >*This field is mandatory.</label></div>-->
                     </div>
                 </div>
 
-              <div class="form-group">
-                <label class="control-label col-md-3 text-right">Description</label>
-                <div class="input-group col-md-7">
-                  <textarea id="description" class="form-control" name="description" cols="71" rows="5"></textarea>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">Description</label>
+                    <div class="col-md-7">
+                      <textarea id="description" class="form-control" name="description" cols="71" rows="5"></textarea>
+                    </div>
                 </div>
 
-                  <div class="form-group">
-                    <label class="control-label col-md-3 text-right">Check List</label>
-                      <!--hidden-->
-                    <div class="input-group col-md-5" id="list">
-                        <input id="listString" type='hidden' name="list">
-                        <div class="form-group">
-                        </div>
-                            <!--<div class="col-md-3"></div>-->
-                        <div class="col-md-8">
-                        <div id="somediv" name="checkForm">
-                            <div id="checklist">
-                            </div>
-                            <div class="form-group">
-                            </div>
-                            <button id="additem" onclick="verify()" class="bigbutton">Add Item</button>&nbsp;&nbsp;&nbsp;<input id="setVal" class="bigbutton" type="button" value="Save"/>
-                        </div>
 
-                      <!--<input id="bigbutton" type="button" onclick="unhide(this, 'list') " value="Checklist">-->
+                <!--check list plugin-->
+                <div class="form-group">
+                      <label class="control-label col-md-3 text-right">Check List</label>
+                      <div class="col-md-7">
+                          <input id="listString" type='hidden' name="list">
+                          <input id="listTF" type='hidden' name="listTF">
+                          <header>
+                              <input id="new-todo" class="form-control" type="text" placeholder="Add item">
+                          </header>
+                          <section id='main'>
+                              <ul id='todo-list'>
+                              </ul>
+                          </section>
+                      </div>
+                </div>
 
-                        </div>
-                    </div>
-                  <div class="form-group">
-                    <div class="col-lg-12" align="center">
-                        <div class="form-group">
-                        </div>
-                      <input id="bigbutton" type="submit" value="Add" />
-                    </div>
-                  </div>
-                  </div>
-            </div>
+                <!--check list plugin-->
+
+
+                <div class="form-group">
+                     <div class="col-lg-12" align="center">
+                          <div class="form-group">
+                          </div>
+                          <input id="bigbutton" value="Save"/>
+                     </div>
+                </div>
         </form>
     </div>
   </div>
@@ -146,8 +157,77 @@
 
 
 <script>
+        $( function() {
+            $( ".sortable" ).sortable();
+            $( ".sortable" ).disableSelection();
+        } );
+
+        $(document).ready(function(){
+            $("#myBtn1").click(function() {
+                //alert($('#title').val());
+                $('#bigbutton').attr('disabled', true);
+                if ($('#title').val().length != 0)
+                    $('.sendButton').attr('disabled', false);
+                else
+                    $('.sendButton').attr('disabled', true);
+            })
+            $("#myBtn2").click(function() {
+                //alert($('#title').val());
+                $('#bigbutton').attr('disabled', true);
+                if ($('#title').val().length != 0)
+                    $('.sendButton').attr('disabled', false);
+                else
+                    $('.sendButton').attr('disabled', true);
+            })
+            $("#myBtn3").click(function() {
+                //alert($('#title').val());
+                $('#bigbutton').attr('disabled', true);
+                if ($('#title').val().length != 0)
+                    $('.sendButton').attr('disabled', false);
+                else
+                    $('.sendButton').attr('disabled', true);
+            })
+        });
+
+        $( 'textarea' ).keyup(function() {
+            if ($('#title').val() == '') {
+                $('#err').attr('class','unhidden');
+            }
+        });
+
+        $( 'input' ).keyup(function() {
+            if(!$('#title').val()==''){
+                $('#err').attr('class','hidden');
+            }
+            var empty = false;
+            if ($('#title').val() == '') {
+
+                empty = true;
+            }
+
+            if (empty) {
+                $('#bigbutton').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+            } else {
+                $('#bigbutton').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+            }
+        });
 
 
+        $('#bigbutton').click(function () {
+            var element = document.getElementsByClassName('listData');
+            for(var i = 0; i<element.length;i++) {
+                $('#listString').val($('#listString').val()+element[i].innerHTML+"<!>");
+
+            }
+            //alert($('#listString').val());
+            $('.checkBox').each(function () {
+                //alert("hel");
+                var t=this.checked ? "t" : "f";
+                $('#listTF').val($('#listTF').val()+t+"<!>");
+            });
+            //alert($('#listTF').val());
+            document.forms[0].submit();
+        });
         //list
         $(document).ready(function() {
             $('button').on('click', function(e) {
@@ -186,8 +266,8 @@
     //<!--Drag and drop jquery-->
 
     $( function() {
-    $( ".draggable" ).draggable()
-    $( ".droppable" ).droppable({
+    $( ".draggable1" ).draggable()
+    $( ".droppable2" ).droppable({
         classes: {
             "ui-droppable-hover": "ui-state-hover"
         },
@@ -226,30 +306,6 @@
 
 
 
-/*/unhide
-    function unhide(clickedButton, divID) {
-        var item = document.getElementById(divID);
-        if (item) {
-                item.className = 'unhidden';
-                clickedButton.className = 'hidden'
-            }
-        }
-//Unhide*/
-        function verify(){
-            if ($('.combine').length) {
-                var txt=document.getElementsByClassName("combine");
-                if (txt[$('.combine').length].value==""){
-                    alert ("Put some text in there!");
-                    document.getElementById("myBtn").disabled = true;
-                }
-            else{
-                    document.getElementById("myBtn").disabled = false;
-                }
-            }
-            }
-
-
-
         document.getElementById("date").value = Date();
         var modal = document.getElementById('myModal');
         //var modalUpdate = document.getElementById('myModalUpdate');
@@ -261,7 +317,7 @@
 
 
 
-        var edit = function (id,title,description,list,status) {
+        var edit = function (id,title,description,list,listtf,status) {
             //alert(description);
             modal.style.display = "block";
             document.getElementById('id').value = id;
@@ -270,23 +326,35 @@
             document.getElementById('description').value = description;
             document.getElementById('date').value = Date();
             //var divClone = $("#somediv").clone();
-            var t = list.split("<!>");
+            var data = list.split("<!>");
+            var tf = listtf.split("<!>");
             //alert(t.length);
-            if (!$('.combine').length) {
-                for (var i = 0; i < t.length; i += 2) {
-                    if (t[i] === 't') {
-                        $('#checklist').append('<input class="combine" type="checkbox" checked="checked">' +
-                                '<input name="elem" class="combine" type="text"><br><div class="form-group"></div>');
+            //var todos = $todoList.html();
+            if (!$('.checkBox').length) {
+                //alert("hello1if");
+                for (var i=0;i<data.length-1;i++) {
+                    //alert(tf[i]);
+                    if (tf[i] === "t") {
+                        //alert("hello");
+                        $('#todo-list').append(""+
+                                "<li>" +
+                                "<div class='view'>" +
+                                "<input class='toggle checkBox' type='checkbox' checked='checked'>" +
+                                "<label class='listData' data=''>" + " " + data[i] + "</label>" +
+                                "<a class='destroy'></a>" +
+                                "</div>" +
+                                "</li>");
                     }
                     else {
-                        $('#checklist').append('<input class="combine" type="checkbox">' +
-                                '<input name="elem" class="combine" type="text"><br><div class="form-group"></div>');
+                        $('#todo-list').append(""+
+                                "<li>" +
+                                "<div class='view'>" +
+                                "<input class='toggle checkBox' type='checkbox'>" +
+                                "<label class='listData' data=''>" + " " + data[i] + "</label>" +
+                                "<a class='destroy'></a>" +
+                                "</div>" +
+                                "</li>");
                     }
-                }
-                var j = 0;
-                var inp = document.getElementsByName("elem");
-                for (var i = 1; i <= t.length; i += 2) {
-                    inp[j++].value = t[i];
                 }
             }
         }
@@ -324,7 +392,7 @@
         });
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+   /*     window.onclick = function(event) {
           if (event.target == modal) {
               $('#regForm')[0].reset();
               //$("#somediv").replaceWith(divClone);
@@ -332,10 +400,10 @@
               modal.style.display = "none";
 
           }
-        }
+        }*/
 
 
 
-</script>
+    </script>
 
 }

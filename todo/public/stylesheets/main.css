@@ -64,6 +64,7 @@ input#bigbutton {
     border:1px solid #3e9cbf; /*required or the default border for the browser will appear*/
     cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
     /*style the text*/
+    text-align: center;
     font-size:12px;
     font-family:'Roboto', sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
     letter-spacing:.1em;
@@ -74,7 +75,9 @@ input#bigbutton {
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
-
+input#bigbutton:disabled {
+    background: #dddddd;
+}
 .formlr{
     height: 400px;
     width: 600px;
