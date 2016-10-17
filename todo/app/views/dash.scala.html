@@ -23,8 +23,8 @@
   <div class="col-lg-4">
     <div class="todo block-inside">
       <label class="control-label col-md-3 text-right">To Do</label>
-            <div class="padtop">
-                <div class="droppable sortable">
+            <div class="padtop" id="1">
+                <div class="1 droppable sortable">
                     <div id="ScrollStyle">
                         @for(t <- tasks) {
                             @if(t.getStatus()=="1"&&t.getUser.equals(userEmail)){
@@ -32,7 +32,8 @@
                                     <div class="left">@t.getTitle()</div>  <div class="right">
                                         <i id="blu" class="fa fa-pencil fa-2x" aria-hidden="true" onclick="edit('@t.getId','@t.getTitle','@t.getDescription','@t.getList','@t.getListTF','@t.getStatus')"></i> <a href="@routes.HomeController.del(t.getId)" onclick="return confirm('Are you sure?')"> <i id="blu" class="fa fa-trash fa-2x" aria-hidden="true"></i></a></div>
                                         <br>
-                                        <input type="hidden" value=@t.getId()>
+                                        <input id="id" type="hidden" value=@t.getId()>
+
                                         <h6 id="time" align="right">@t.getLastUpdated()</h6>
                                 </div>
                             }
@@ -48,7 +49,7 @@
             <div class="doing block-inside">
                 <label class="control-label col-md-3 text-right">Doing</label>
                 <div class="padtop">
-                    <div class="droppable sortable">
+                    <div class="2 droppable sortable">
                         <div id="ScrollStyle">
                         @for(t <- tasks) {
                             @if(t.getStatus()=="2"&&t.getUser.equals(userEmail)){
@@ -71,8 +72,8 @@
         <div class="col-lg-4">
             <div class="done block-inside">
                 <label class="control-label col-md-3 text-right">Done</label>
-                <div class="padtop">
-                    <div class="droppable sortable">
+                <div id="2" class="padtop">
+                    <div class="3 droppable sortable">
                         <div id="ScrollStyle">
                         @for(t <- tasks) {
                             @if(t.getStatus()=="3"&&t.getUser.equals(userEmail)){
@@ -106,7 +107,9 @@
                 <input id="date" type="hidden" name="lastUpdated" >
                 <input name="user" type="hidden" value=@userEmail>
                 <input name="status" type="hidden" id="statusid">
-                <div class="form-group">
+
+            <div class="form-group">
+                <div>
                     <label class="control-label col-md-3 text-right">Title</label>
                     <div class="col-md-7">
                       <input id="title" class="form-control" type="text" name="title" ng-model="title" required>
@@ -115,17 +118,27 @@
                     </div>
                 </div>
 
+            </div>
 
-                <div class="form-group">
+            <div class="spacer"></div>
+
+
+            <div class="form-group">
+                <div>
                     <label class="control-label col-md-3 text-right">Description</label>
                     <div class="col-md-7">
                       <textarea id="description" class="form-control" name="description" cols="71" rows="5"></textarea>
                     </div>
                 </div>
+                <div class="spacer"></div>
+            </div>
 
 
-                <!--check list plugin-->
+
+
+            <!--check list plugin-->
                 <div class="form-group">
+                    <div>
                       <label class="control-label col-md-3 text-right">Check List</label>
                       <div class="col-md-7">
                           <input id="listString" type='hidden' name="list">
@@ -138,9 +151,11 @@
                               </ul>
                           </section>
                       </div>
+                    </div>
                 </div>
 
                 <!--check list plugin-->
+            <div class="spacer"></div>
 
 
                 <div class="form-group">
@@ -278,9 +293,15 @@
     } );
         $('.droppable').droppable({
             drop: function(ev, ui) {
-                $(ui.draggable).detach().css({top: 0,left: 0}).appendTo(this);
+                $(ui.draggable).detach().css({top: 0, left: 0}).appendTo(this);
+                var newStatus = $(this).closest('div').attr('class');
+                var taskLastUpdated=$(ui.draggable).children('#time').text();
+                //alert($(ui.draggable).children('#id').val());
+                //var title=$(ui.draggable).children('#time').text();
+
             }
         });
+
 
         $(function() {
             $(".draggable").draggable({
@@ -341,7 +362,6 @@
                                 "<div class='view'>" +
                                 "<input class='toggle checkBox' type='checkbox' checked='checked'>" +
                                 "<label class='listData' data=''>" + " " + data[i] + "</label>" +
-                                "<a class='destroy'></a>" +
                                 "</div>" +
                                 "</li>");
                     }
@@ -351,7 +371,6 @@
                                 "<div class='view'>" +
                                 "<input class='toggle checkBox' type='checkbox'>" +
                                 "<label class='listData' data=''>" + " " + data[i] + "</label>" +
-                                "<a class='destroy'></a>" +
                                 "</div>" +
                                 "</li>");
                     }
