@@ -1,0 +1,90 @@
+@(userEmail: String)
+
+@main("Notes") {
+  <div ng-app="myAppName1" ng-controller="ArchiveHttpGetController">
+
+
+
+      <div class="padTopMore col-md-8 col-sm-offset-2">
+      <div class="row col-md-12">
+        <div ng-repeat="post in postsArch track by $index" ng-if="$index % 3 == 0">
+          <div class="col-md-4 eachCard"
+          ng-repeat="i in [$index, $index + 1, $index + 2]"
+          ng-if="postsArch[i] != null">
+            <div class="card" ng-click="addDataToModal(postsArch[i].user,postsArch[i].id,postsArch[i].title,postsArch[i].content,0,0,postsArch[i].isArchive)">
+              <input ng-model="id"  name="id" ng-value="postsArch[i].id" type="hidden">
+              <div class="clickd">
+                <div name="title" class="title" contenteditable="false">{{ postsArch[i].title }}</div>
+                <div name="content" class="content" contenteditable="false">{{ postsArch[i].content }}</div>
+              </div>
+              <div class="toolbar">
+                <div class="inner">
+                  <a ng-click="del(postsArch[i].id)"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+                  <a ng-click="unArchive(postsArch[i].id,postsArch[i].isArchive)"><i class="fa fa-external-link fa-lg" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+      <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+          <!-- Modal content-->
+
+        <div class="form-group">
+
+          <div class="note col-md-12">
+
+            <input data-ng-model="data.user" type="hidden">
+            <input data-ng-model="data.id" type="hidden">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div id="titleDiv" class="title" ><input data-ng-model="data.title" class="textDivInp" placeholder="Title" name="title" type="text"></div>
+            <div id="contentDiv" class="content">
+              <textarea data-ng-model="data.content" placeholder="Take a note..." name="content"></textarea>
+            </div>
+            <div id="toolbarDiv" class="toolbar">
+              <div align="right" > <button class="done" id="updateButton" ng-click="updateData()">Done</button> </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script>
+          $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+          } );
+
+
+          $(document).on('click', '.clickd', function () {
+            // your function here
+            //alert("Hello");
+            $('#myModal').modal('show');
+          });
+          $(document).on('click', '#updateButton', function () {
+            // your function here
+            //alert("Hello");
+            $('#myModal').modal('toggle');
+          });
+
+
+
+
+  </script>
+}

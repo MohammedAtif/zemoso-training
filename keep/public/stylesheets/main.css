@@ -1,0 +1,120 @@
+.navbar-custom {
+    background-color:#fb0;
+    color:#ffffff;
+    height: 64px;
+    border-radius:0; !important;
+    margin-bottom: 0px; !important;
+}
+.fontrobo{
+    font-family: 'Roboto', sans-serif;
+}
+.zemofnt{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+.colBlack{
+color: black;
+}
+.cent{
+    padding-top: 20px;
+}
+.glyphicon{
+    font-size: 20px;
+    padding-left: 20px;
+    color: #000;
+}
+.glyphicon.glyphicon-search{
+    font-size: 15px;
+}
+.inp{
+    padding: 10px;
+    width:270px;
+    border: solid 1px gainsboro;
+    -webkit-transition: box-shadow 0.3s, border 0.3s;
+    -moz-transition: box-shadow 0.3s, border 0.3s;
+    -o-transition: box-shadow 0.3s, border 0.3s;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.inp:focus, .style-1 input.focus {
+    border: 1px solid rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px 1px #969696;
+    -moz-box-shadow: 0 0 5px 1px #969696;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+.error{
+    color: #c0392b;
+    font-family: Arial;
+    font-size: small;
+}
+.error1{
+    margin-bottom: 30px;
+    color: #c0392b;
+    font-family: Arial;
+    font-size: medium;
+}
+label{
+    padding-top: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+/***FIRST STYLE THE BUTTON***/
+input#bigbutton {
+    width:270px;
+    background: #3e9cbf; /*the colour of the button*/
+    padding: 8px 14px 10px; /*apply some padding inside the button*/
+    border: 1px solid #2f5bb7;; /*required or the default border for the browser will appear*/
+    cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    /*style the text*/
+    text-align: center;
+    font-size:12px;
+    font-family:'Roboto', sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+    letter-spacing:.1em;
+    text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+    color: white;
+    /*give the corners a small curve*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 3px;
+}
+input#bigbutton:disabled {
+    background: #dddddd;
+}
+input#bigbutton:hover {
+    border: 1px solid #2f5bb7;
+    color: #fff;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    background-color: #357ae8;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+}
+.formlr{
+    height: 400px;
+    width: 400px;
+    background-color: #ecf0f1;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+
+}
+.formin{
+    padding-top: 30px;
+}
+.center{
+    margin:0px auto;
+    text-align: center;
+}
+.padtop{
+    padding-top: 30px;
+}
+.formcontent{
+    width:300px;
+    height:150px;
+    margin:auto;
+
+}
+.fill{
+    width: 100%;
+}
+html { background: transparent }

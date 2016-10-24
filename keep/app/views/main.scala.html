@@ -1,0 +1,87 @@
+@*
+ * This template is called from the `index` template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * two arguments, a `String` for the title of the page and an `Html`
+ * object to insert into the body of the page.
+ *@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        @* Here's where we render the page title `String`. *@
+        <title>@title</title>
+        <!--Style Sheets-->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/dash.css")">
+        <!-- Jquery -->
+        <script type="text/javascript" src="@routes.Assets.versioned("javascripts/jquery-3.1.1.min.js")"></script>
+        <!--Jquery UI-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!--Font Awesome -->
+        <link rel="stylesheet" href="@routes.Assets.versioned("font-awesome/css/font-awesome.min.css")">
+        <!--BootStrap css-->
+        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
+        <!--Bootstrap js-->
+        <script src="@routes.Assets.versioned("bootstrap/js/bootstrap.js")" type="text/javascript"></script>
+        <!--AngularJS-->
+        <script type="text/javascript" src="@routes.Assets.versioned("javascripts/angular.min.js")"></script>
+        <!--SideBar -->
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/simple-sidebar.css")">
+        <!-- Java Script-->
+        <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+        <!-- BootStrap Date Time Picker-->
+        <script type="text/javascript" src="@routes.Assets.versioned("javascripts/moment.js")"></script>
+        <script type="text/javascript" src="@routes.Assets.versioned("javascripts/bootstrap-datetimepicker.min.js")"></script>
+<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap-datetimepicker.min.css")">
+    </head>
+    <body>
+
+            <!-- Top Bar -->
+        <nav class="navbar-custom navbar navbar-static-top">
+            <div class="navbar-header">
+                <div class="cent col-md-1"><a href="#menu-toggle" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><h2 class="zemofnt fontrobo colBlack ">Keep</h2></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="wrapper" class="toggled">
+                <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Start Bootstrap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@routes.HomeController.Dash()">Notes</a>
+                    </li>
+                    <li>
+                        <a href="@routes.HomeController.gArchive()">Archive</a>
+                    </li>
+                    <li>
+                        <a href="#">Overview</a>
+                    </li>
+                </ul>
+            </div>
+        @* And here's where we render the `Html` object containing
+         * the page content. *@
+
+        @content
+        </div>
+            <!-- Modules -->
+        <script src="@routes.Assets.versioned("javascripts/app.js")"></script>
+
+            <!-- Controllers -->
+        <script src="@routes.Assets.versioned("javascripts/controllers/MainController.js")"></script>
+    </body>
+</html>
