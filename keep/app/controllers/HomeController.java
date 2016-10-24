@@ -94,35 +94,37 @@ public class HomeController extends Controller {
         String title=jsonNode.path("title").asText();
         String content=jsonNode.path("content").asText();
         String reminder=jsonNode.path("reminder").asText();
+        //int isArchive=jsonNode.path("isArchive").asInt();
         int isActive=0;
-        Date now=new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a");
-        SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        String rem=reminder;
+
+        System.out.println(title+"**********************************"+content);
+            if (reminder != "") {
+                Date now = new Date();
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a");
+                SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("MM/dd/yyyy HH:mm");
 
 
-        //reminder=(simpleDateFormat1.format(simpleDateFormat.parse(reminder)));
-        try
-        {
-            reminder=(simpleDateFormat1.format(simpleDateFormat.parse(reminder)));
-            Date date = simpleDateFormat1.parse(reminder);
+                //reminder=(simpleDateFormat1.format(simpleDateFormat.parse(reminder)));
+                try {
+                    reminder = (simpleDateFormat1.format(simpleDateFormat.parse(reminder)));
+                    Date date = simpleDateFormat1.parse(reminder);
 
-            System.out.println("date : "+simpleDateFormat.format(date));
-            System.out.println(now+"**********************************"+date);
-            if(!now.after(date)){
-                isActive=1;
+                    System.out.println("date : " + simpleDateFormat.format(date));
+
+                    if (!now.after(date)) {
+                        isActive = 1;
+                    }
+                    Card posts = new Card(user, title, content, rem, 0, isActive);
+                    posts.save();
+
+                } catch (ParseException ex) {
+                    System.out.println("Exception " + ex);
+                }
+            } else {
+                Card posts = new Card(user, title, content, "", 0, 0);
+                posts.save();
             }
-            Card posts=new Card(user, title, content, reminder,0,isActive);
-            posts.save();
-
-        }
-        catch (ParseException ex)
-        {
-            System.out.println("Exception "+ex);
-        }
-
-
-
-
         return ok(HomeController.buildJsonResponse("success", "Post added successfully"));
     }
 
@@ -131,12 +133,42 @@ public class HomeController extends Controller {
         String id=jsonNode.path("id").asText();
         String user=jsonNode.path("user").asText();
         String title=jsonNode.path("title").asText();
-        int isArchive=jsonNode.path("isArchive").asInt();
-        System.out.println(id);
         long Id=Long.parseLong(id);
         String content=jsonNode.path("content").asText();
-        Card posts=new Card(Id,user, title, content, "",isArchive,0);
-        posts.update();
+
+        String reminder=jsonNode.path("reminder").asText();
+        String rem=reminder;
+        System.out.println("*************"+reminder+"**************");
+        int isArchive=jsonNode.path("isArchive").asInt();
+        int isActive=0;
+
+        if (reminder != "") {
+            Date now = new Date();
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a");
+            SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+
+
+            //reminder=(simpleDateFormat1.format(simpleDateFormat.parse(reminder)));
+            try {
+                reminder = (simpleDateFormat1.format(simpleDateFormat.parse(reminder)));
+                Date date = simpleDateFormat1.parse(reminder);
+
+                System.out.println("date : " + simpleDateFormat.format(date));
+
+                if (!now.after(date)) {
+                    isActive = 1;
+                }
+                Card posts = new Card(Id, user, title, content, rem, isArchive, isActive);
+                posts.update();
+
+            } catch (ParseException ex) {
+                System.out.println("Exception " + ex);
+            }
+        } else {
+            Card posts = new Card(Id, user, title, content, "", isArchive, isActive);
+            posts.update();
+        }
+
         return ok(HomeController.buildJsonResponse("success", "Post added successfully"));
     }
 
@@ -145,8 +177,10 @@ public class HomeController extends Controller {
         String user=jsonNode.path("user").asText();
         String title=jsonNode.path("title").asText();
         int isArchive=jsonNode.path("isArchive").asInt();
+        int isReminderActive=jsonNode.path("isActive").asInt();
+        String reminder=jsonNode.path("remainder").asText();
         String content=jsonNode.path("content").asText();
-        Card posts=new Card(user, title, content, "",isArchive,0);
+        Card posts=new Card(user, title, content,reminder,isArchive,isReminderActive);
         posts.save();
         return ok(HomeController.buildJsonResponse("success", "Post added successfully"));
     }
@@ -161,7 +195,12 @@ public class HomeController extends Controller {
 
     public Result Dash(){
         List<Card> card= Card.getData(session().get("email"));
+        if(!(session().get("email")==null)){
         return ok(dash.render(session().get("email"),card));
+        }
+        else{
+            return redirect(routes.HomeController.index());
+        }
     }
     public Result gArchive(){
         return ok(archive.render(session().get("email")));
@@ -170,6 +209,15 @@ public class HomeController extends Controller {
         List<Card> card= Card.getArchive(session().get("email"));
         return ok(Json.toJson(card));
     }
+    public Result gReminder(){
+        return ok(reminder.render(session().get("email")));
+    }
+    public Result getReminder(){
+        List<Card> card = Card.getReminder(session().get("email"));
+        System.out.print("This is happening");
+        return ok(Json.toJson(card));
+    }
+
     public Result getPosts() {
         List<Card> card= Card.getData(session().get("email"));
         return ok(Json.toJson(card));
@@ -198,5 +246,9 @@ public class HomeController extends Controller {
         c.update();
         return ok();
     }
-
+    public Result logout(){
+        session().clear();
+        flash("success", "You've been logged out");
+        return redirect(routes.HomeController.index());
+    }
 }

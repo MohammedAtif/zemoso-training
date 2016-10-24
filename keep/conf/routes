@@ -18,11 +18,11 @@ POST    /regis                      controllers.HomeController.register
 
 GET     /dash                       controllers.HomeController.Dash
 
-POST	/addPost					controllers.HomeController.addCards
+POST	/addPost					controllers.HomeController.addCards()
 #DOUBT1
 GET     /addPost                    controllers.HomeController.Dash
 
-POST	/updatePost					controllers.HomeController.updateCards
+POST	/updatePost					controllers.HomeController.updateCards()
 #DOUBT2
 GET     /updatePost                 controllers.HomeController.Dash
 
@@ -40,4 +40,11 @@ POST	/copyPost					controllers.HomeController.copyCards
 #DOUBT2
 GET     /copyPost                   controllers.HomeController.Dash
 
-POST    /updateReminder             controllers.HomeController.updateReminder
+POST    /updateReminder             controllers.HomeController.updateReminder()
+
+GET     /logout                     controllers.HomeController.logout
+
+GET     /toReminders                controllers.HomeController.gReminder
+
+GET     /getReminder                controllers.HomeController.getReminder
+

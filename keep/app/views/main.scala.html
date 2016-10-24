@@ -37,7 +37,8 @@
         <!-- BootStrap Date Time Picker-->
         <script type="text/javascript" src="@routes.Assets.versioned("javascripts/moment.js")"></script>
         <script type="text/javascript" src="@routes.Assets.versioned("javascripts/bootstrap-datetimepicker.min.js")"></script>
-<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap-datetimepicker.min.css")">
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap-datetimepicker.min.css")">
+
     </head>
     <body>
 
@@ -50,6 +51,9 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><h2 class="zemofnt fontrobo colBlack ">Keep</h2></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active padright"><a href="@routes.HomeController.logout">Sign out</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -57,19 +61,22 @@
                 <!-- Sidebar -->
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
-                    <li class="sidebar-brand">
-                        <a href="#">
-                            Start Bootstrap
+                    <li>
+                        <a href="@routes.HomeController.Dash()">
+                            <div class="col-md-3"><i class="fa fa-sticky-note fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Notes</div>
                         </a>
                     </li>
                     <li>
-                        <a href="@routes.HomeController.Dash()">Notes</a>
+                        <a href="@routes.HomeController.gArchive()">
+                            <div class="col-md-3"><i class="fa fa-archive fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Archive</div>
+
+                        </a>
                     </li>
                     <li>
-                        <a href="@routes.HomeController.gArchive()">Archive</a>
-                    </li>
-                    <li>
-                        <a href="#">Overview</a>
+                        <a href="@routes.HomeController.gReminder()">
+                            <div class="col-md-3"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Reminder</div>
+
+                        </a>
                     </li>
                 </ul>
             </div>

@@ -17,7 +17,7 @@
                         <div id="toolbarDiv" class="toolbar">
                             <div class="col-md-2">
                             <div class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell fa lg" aria-hidden="true"></i>
+                                <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell fa lg" data-toggle="tooltip" data-placement="bottom" title="Set Reminder" aria-hidden="true"></i>
                                    </a>
                                 <div class="dropdown-menu">
                                     <div class="container1">
@@ -39,25 +39,27 @@
 
 
 
+
+
+
         <div class="padTopMore col-md-8 col-md-offset-2">
-            <div sv-root class="row col-md-12">
-                <div sv-element ng-repeat="post in posts track by $index" ng-if="$index % 3 == 0">
-                    <div class="col-md-4 eachCard"
-                    ng-repeat="i in [$index, $index + 1, $index + 2]"
-                    ng-if="posts[i] != null">
-                        <div class="card" ng-click="addDataToModal(posts[i].user,posts[i].id,posts[i].title,posts[i].content,0,0,0)">
-                        <input ng-model="id"  name="id" ng-value="posts[i].id" type="hidden">
-                         <div class="clickd">
-                            <div name="title" class="title" contenteditable="false">{{ posts[i].title }}</div>
-                            <div name="content" class="content" contenteditable="false">{{ posts[i].content }}</div>
-                         </div>
-                         <div class="toolbar">
-                             <div class="inner">
-                             <div class="col-md-3"><a ng-click="del(posts[i].id)"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a></div>
-                             <div class="col-md-3"><a ng-click="archive(posts[i].id,posts[i].isArchive)"><i class="fa fa-archive fa-lg" aria-hidden="true"></i></a></div>
-                             <div class="col-md-3"><a ng-click="copyData(posts[i].user,posts[i].title,posts[i].content,0,0,post[i].isArchive)"><i class="fa fa-clone fa-lg" aria-hidden="true"></i></a></div>
-                             </div>
-                         </div>
+            <div id="sortable" class="row rowWithFullWidth col-md-12">
+                <div ng-repeat="post in posts">
+                    <div class="col-md-4 eachCard" ng-click="addDataToModal(post.user,post.id,post.title,post.content,post.reminder,0,0)">
+                        <div class="card" >
+                            <input ng-model="id"  name="id" ng-value="post.id" type="hidden">
+                            <div class="clickd">
+                                <div name="title" class="title" contenteditable="false">{{ post.title }}</div>
+                                <div name="content" class="content" contenteditable="false">{{ post.content }}</div>
+                                <div name="reminder" class="remind" contenteditable="false"><div class="remindText">{{post.reminder}}</div></div>
+                            </div>
+                            <div class="toolbar">
+                                <div class="inner">
+                                    <div class="col-md-3"><a ng-click="del(post.id)"><i data-toggle="tooltip" data-placement="bottom" title="Delete Note" class="fa fa-trash fa-lg" aria-hidden="true"></i></a></div>
+                                    <div class="col-md-3"><a ng-click="archive(post.id,post.isArchive)"><i data-toggle="tooltip" data-placement="bottom" title="Archive Note" class="fa fa-archive fa-lg" aria-hidden="true"></i></a></div>
+                                    <div class="col-md-3"><a ng-click="copyData(post.user,post.title,post.content,post.reminder,post.isReminderActive,post.isArchive)"><i data-toggle="tooltip" data-placement="bottom" title="Make a copy" class="fa fa-clone fa-lg" aria-hidden="true"></i></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,6 +70,36 @@
 
 
 
+
+
+
+       <!-- <div class="padTopMore col-md-8 col-md-offset-2">
+            <div class="row rowWithFullWidth col-md-12">
+                <div ng-repeat="post in posts track by $index" ng-if="$index % 3 == 0">
+                    <div class="col-md-4 eachCard"
+                    ng-repeat="i in [$index, $index + 1, $index + 2]"
+                    ng-if="posts[i] != null">
+                        <div class="card" ng-click="addDataToModal(posts[i].user,posts[i].id,posts[i].title,posts[i].content,posts[i].reminder,0,0)">
+                        <input ng-model="id"  name="id" ng-value="posts[i].id" type="hidden">
+                         <div class="clickd">
+                            <div name="title" class="title" contenteditable="false">{{ posts[i].title }}</div>
+                            <div name="content" class="content" contenteditable="false">{{ posts[i].content }}</div>
+                             <div name="reminder" class="remind" contenteditable="false"><div class="remindText">{{posts[i].reminder}}</div></div>
+                         </div>
+                             <div class="toolbar">
+                                 <div class="inner">
+                                     <div class="col-md-3"><a ng-click="del(posts[i].id)"><i data-toggle="tooltip" data-placement="bottom" title="Delete Note" class="fa fa-trash fa-lg" aria-hidden="true"></i></a></div>
+                                     <div class="col-md-3"><a ng-click="archive(posts[i].id,posts[i].isArchive)"><i data-toggle="tooltip" data-placement="bottom" title="Archive Note" class="fa fa-archive fa-lg" aria-hidden="true"></i></a></div>
+                                     <div class="col-md-3"><a ng-click="copyData(posts[i].user,posts[i].title,posts[i].content,posts[i].reminder,post[i].isReminderActive,post[i].isArchive)"><i data-toggle="tooltip" data-placement="bottom" title="Make a copy" class="fa fa-clone fa-lg" aria-hidden="true"></i></a></div>
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+-->
 
             <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
@@ -86,6 +118,13 @@
                                 <div id="contentDiv" class="content">
                                     <textarea data-ng-model="data.content" placeholder="Take a note..." name="content"></textarea>
                                 </div>
+                                <div class="remind">
+                                    <div class="container2">
+                                            <!--<input ng-model="reminderTime" class="form-control" id='datetimepicker4' placeholder="Pick The time." name="reminderTime" type="text">-->
+                                        <input id="editTime" data-ng-model="data.reminder" class="form-control datetimepicker4" type='text' name="reminderTime" placeholder="No Reminder!"/>
+                                        <!--<span id="clear1" class="glyphicon glyphicon-remove-circle"></span>-->
+                                    </div>
+                                </div>
                                 <div id="toolbarDiv" class="toolbar">
                                     <div align="right" > <button class="done" id="updateButton" ng-click="updateData()">Done</button> </div>
                                 </div>
@@ -101,14 +140,29 @@
 
 <script>
 
-                $(function () {
+        $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+        } );
+
+        $(function () {
                     $('.datetimepicker4').datetimepicker();
                 });
         $('.datetimepicker4').blur(function () {
             angular.element($('.datetimepicker4')).triggerHandler('input');
         })
+                $('#editTime').blur(function () {
+                    angular.element($('#editTime')).triggerHandler('input');
+                })
+                $('#clear1').blur(function () {
+                    angular.element($('#editTime')).triggerHandler('input');
+                })
                 $("#clear").click(function(){
-                    $("#datetimepicker4").val('');
+                    $(".datetimepicker4").val('');
+                });
+
+                $("#clear1").click(function(){
+                    $(".datetimepicker4").val('');
                 });
 
 

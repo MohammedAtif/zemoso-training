@@ -7,6 +7,8 @@ import org.h2.engine.User;
 
 import java.util.List;
 
+import static com.avaje.ebean.Expr.isNotNull;
+
 @Entity
 public class Card extends Model{
     public static Finder<String, Card> find = new Finder<String, Card>(
@@ -74,6 +76,10 @@ public class Card extends Model{
 
     public static List<Card> getArchive(String email) {
         return Card.find.where().eq("user",email).eq("isArchive",1).findList();
+    }
+    public static List<Card> getReminder(String email) {
+        //return Card.find.where().eq("user",email).eq("isArchive",1).findList();
+        return Card.find.where().eq("user",email).not().eq("reminder","").findList();
     }
 
     public long getCardIdId() {

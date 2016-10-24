@@ -118,3 +118,10 @@ input#bigbutton:hover {
     width: 100%;
 }
 html { background: transparent }
+.padright{
+    padding-right: 30px;
+    padding-top: 7px;
+}
+.nav>.padright>a:focus, .nav>.padright>a:hover{
+    background-color: #F5B400;
+}

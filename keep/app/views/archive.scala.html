@@ -11,16 +11,18 @@
           <div class="col-md-4 eachCard"
           ng-repeat="i in [$index, $index + 1, $index + 2]"
           ng-if="postsArch[i] != null">
-            <div class="card" ng-click="addDataToModal(postsArch[i].user,postsArch[i].id,postsArch[i].title,postsArch[i].content,0,0,postsArch[i].isArchive)">
+            <div class="card" ng-click="addDataToModal(postsArch[i].user,postsArch[i].id,postsArch[i].title,postsArch[i].content,postsArch[i].reminder,0,postsArch[i].isArchive)">
               <input ng-model="id"  name="id" ng-value="postsArch[i].id" type="hidden">
               <div class="clickd">
                 <div name="title" class="title" contenteditable="false">{{ postsArch[i].title }}</div>
                 <div name="content" class="content" contenteditable="false">{{ postsArch[i].content }}</div>
+                <div name="reminder" class="remind" contenteditable="false"><div class="remindText">{{postsArch[i].reminder}}</div></div>
+
               </div>
               <div class="toolbar">
                 <div class="inner">
-                  <a ng-click="del(postsArch[i].id)"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
-                  <a ng-click="unArchive(postsArch[i].id,postsArch[i].isArchive)"><i class="fa fa-external-link fa-lg" aria-hidden="true"></i></a>
+                  <div class="col-md-4"><a ng-click="del(postsArch[i].id)"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a></div>
+                  <div class="col-md-4"><a ng-click="unArchive(postsArch[i].id,postsArch[i].isArchive)"><i class="fa fa-external-link fa-lg" aria-hidden="true"></i></a></div>
                 </div>
               </div>
             </div>
@@ -52,6 +54,13 @@
             <div id="contentDiv" class="content">
               <textarea data-ng-model="data.content" placeholder="Take a note..." name="content"></textarea>
             </div>
+              <div class="remind">
+                  <div class="container2">
+                          <!--<input ng-model="reminderTime" class="form-control" id='datetimepicker4' placeholder="Pick The time." name="reminderTime" type="text">-->
+                      <input id="editTime" data-ng-model="data.reminder" class="form-control datetimepicker4" type='text' name="reminderTime" placeholder="No Reminder!"/>
+                          <!--<span id="clear1" class="glyphicon glyphicon-remove-circle"></span>-->
+                  </div>
+              </div>
             <div id="toolbarDiv" class="toolbar">
               <div align="right" > <button class="done" id="updateButton" ng-click="updateData()">Done</button> </div>
             </div>
@@ -67,21 +76,42 @@
 
   <script>
           $( function() {
-            $( "#sortable" ).sortable();
-            $( "#sortable" ).disableSelection();
+              $( "#sortable" ).sortable();
+              $( "#sortable" ).disableSelection();
           } );
+
+          $(function () {
+              $('.datetimepicker4').datetimepicker();
+          });
+          $('.datetimepicker4').blur(function () {
+              angular.element($('.datetimepicker4')).triggerHandler('input');
+          })
+          $('#editTime').blur(function () {
+              angular.element($('#editTime')).triggerHandler('input');
+          })
+          $('#clear1').blur(function () {
+              angular.element($('#editTime')).triggerHandler('input');
+          })
+          $("#clear").click(function(){
+              $(".datetimepicker4").val('');
+          });
+
+          $("#clear1").click(function(){
+              $(".datetimepicker4").val('');
+          });
 
 
           $(document).on('click', '.clickd', function () {
-            // your function here
-            //alert("Hello");
-            $('#myModal').modal('show');
+              // your function here
+              //alert("Hello");
+              $('#myModal').modal('show');
           });
           $(document).on('click', '#updateButton', function () {
-            // your function here
-            //alert("Hello");
-            $('#myModal').modal('toggle');
+              // your function here
+              //alert("Hello");
+              $('#myModal').modal('toggle');
           });
+
 
 
 
