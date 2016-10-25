@@ -266,7 +266,7 @@ app1.controller("ArchiveHttpGetController", function ($scope, $http) {
     };
     $scope.unArchive = function (id,isArchive) {
         // use $.param jQuery function to serialize data from JSON
-
+        //alert(id+" "+isArchive);
         //console.log(id);
         var data = {
             id:id,

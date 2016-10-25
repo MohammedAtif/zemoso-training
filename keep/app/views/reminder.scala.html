@@ -4,8 +4,33 @@
   <div ng-app="myAppName2" ng-controller="ReminderHttpGetController">
 
 
+    <div class="padTopMore col-md-8 col-md-offset-2">
+      <div ng-sortable="{animation:150}" class="row rowWithFullWidth col-md-12">
+        <div ng-repeat="post in postsReminder">
+          <div class="col-md-4 eachCard" ng-click="addDataToModal(post.user,post.id,post.title,post.content,post.reminder,0,0)">
+            <div class="card" >
+              <input ng-model="id" name="id" ng-value="post.id" type="hidden">
+              <div class="clickd">
+                <div name="title" class="title" contenteditable="false">{{ post.title }}</div>
+                <div name="content" class="content" contenteditable="false">{{ post.content }}</div>
+                <div name="reminder" class="remind" contenteditable="false"><div class="remindText">{{post.reminder}}</div></div>
+              </div>
+              <div class="toolbar">
+                <div class="inner">
+                  <div class="col-md-3"><a ng-click="del(post.id)"><i data-toggle="tooltip" data-placement="bottom" title="Delete Note" class="fa fa-trash fa-lg" aria-hidden="true"></i></a></div>
+                  <div class="col-md-3"><a ng-click="archive(post.id,post.isArchive)"><i data-toggle="tooltip" data-placement="bottom" title="Archive Note" class="fa fa-archive fa-lg" aria-hidden="true"></i></a></div>
+                  <div class="col-md-3"><a ng-click="copyData(post.user,post.title,post.content,post.reminder,post.isReminderActive,post.isArchive)"><i data-toggle="tooltip" data-placement="bottom" title="Make a copy" class="fa fa-clone fa-lg" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="padTopMore col-md-8 col-sm-offset-2">
+
+
+    <!--<div class="padTopMore col-md-8 col-sm-offset-2">
       <div class="row col-md-12">
         <div ng-repeat="post in postsReminder track by $index" ng-if="$index % 3 == 0">
           <div class="col-md-4 eachCard"
@@ -31,7 +56,7 @@
       </div>
     </div>
 
-
+-->
 
 
 

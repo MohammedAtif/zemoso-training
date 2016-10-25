@@ -43,11 +43,11 @@
 
 
         <div class="padTopMore col-md-8 col-md-offset-2">
-            <div id="sortable" class="row rowWithFullWidth col-md-12">
+            <div ng-sortable class="row rowWithFullWidth col-md-12">
                 <div ng-repeat="post in posts">
                     <div class="col-md-4 eachCard" ng-click="addDataToModal(post.user,post.id,post.title,post.content,post.reminder,0,0)">
                         <div class="card" >
-                            <input ng-model="id"  name="id" ng-value="post.id" type="hidden">
+                            <input ng-model="id" name="id" ng-value="post.id" type="hidden">
                             <div class="clickd">
                                 <div name="title" class="title" contenteditable="false">{{ post.title }}</div>
                                 <div name="content" class="content" contenteditable="false">{{ post.content }}</div>
@@ -139,11 +139,6 @@
     </div>
 
 <script>
-
-        $( function() {
-            $( "#sortable" ).sortable();
-            $( "#sortable" ).disableSelection();
-        } );
 
         $(function () {
                     $('.datetimepicker4').datetimepicker();
