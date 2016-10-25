@@ -39,7 +39,8 @@
         <script type="text/javascript" src="@routes.Assets.versioned("javascripts/bootstrap-datetimepicker.min.js")"></script>
         <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap-datetimepicker.min.css")">
         <!--Rubaxa Sortable -->
-        <script src="//cdn.jsdelivr.net/sortable/latest/Sortable.min.js"></script>
+        <!--<script src="//cdn.jsdelivr.net/sortable/latest/Sortable.min.js"></script>-->
+        <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
         <script src="http://rubaxa.github.io/Sortable/ng-sortable.js"></script>
     </head>
     <body>
@@ -63,18 +64,18 @@
                 <!-- Sidebar -->
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
-                        <li>
+                        <li class="itemList">
                             <a href="@routes.HomeController.Dash()">
                                 <div class="col-md-3"><i class="fa fa-sticky-note fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Notes</div>
                             </a>
                         </li>
-                    <li>
+                    <li class="itemList">
                         <a href="@routes.HomeController.gArchive()">
                             <div class="col-md-3"><i class="fa fa-archive fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Archive</div>
 
                         </a>
                     </li>
-                    <li>
+                    <li class="itemList">
                         <a href="@routes.HomeController.gReminder()">
                             <div class="col-md-3"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Reminder</div>
 

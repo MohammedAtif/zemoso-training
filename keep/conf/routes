@@ -23,7 +23,7 @@ POST	/addPost					controllers.HomeController.addCards()
 GET     /addPost                    controllers.HomeController.Dash
 
 POST	/updatePost					controllers.HomeController.updateCards()
-#DOUBT2
+
 GET     /updatePost                 controllers.HomeController.Dash
 
 GET	    /getPosts					controllers.HomeController.getPosts
@@ -37,7 +37,7 @@ GET     /toArchive                  controllers.HomeController.gArchive
 GET     /getArchive                 controllers.HomeController.getArchive
 
 POST	/copyPost					controllers.HomeController.copyCards
-#DOUBT2
+
 GET     /copyPost                   controllers.HomeController.Dash
 
 POST    /updateReminder             controllers.HomeController.updateReminder()

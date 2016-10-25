@@ -1,5 +1,4 @@
 app.controller("HttpGetController", function ($scope, $http) {
-
     $scope.sendData = function () {
         // use $.param jQuery function to serialize data from JSON
         if(!($scope.title==undefined && $scope.content==undefined)) {
@@ -17,6 +16,15 @@ app.controller("HttpGetController", function ($scope, $http) {
                 });
         }
     };
+    $scope.sortableOptions = {
+        containment: '.row',
+        onDrop: function (event) {
+            console.log("orderChanged()");
+            console.dir(event);
+            alert("helo");
+        }
+    }
+
     $scope.copyData = function(user,title,content,remainder,isActive,isArchive) {
         var data = {
             user:user,

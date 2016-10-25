@@ -17,10 +17,9 @@
                               <div name="reminder" class="remind" contenteditable="false"><div class="remindText">{{post.reminder}}</div></div>
                           </div>
                           <div class="toolbar">
-                              <div class="inner">
+                              <div class="inner col-md-offset-4">
                                   <div class="col-md-3"><a ng-click="del(post.id)"><i data-toggle="tooltip" data-placement="bottom" title="Delete Note" class="fa fa-trash fa-lg" aria-hidden="true"></i></a></div>
                                   <div class="col-md-3"><a ng-click="unArchive(post.id,post.isArchive)"><i data-toggle="tooltip" data-placement="bottom" title="Unarchive Note" class="fa fa-undo fa-lg" aria-hidden="true"></i></a></div>
-                                  <div class="col-md-3"><a ng-click="copyData(post.user,post.title,post.content,post.reminder,post.isReminderActive,post.isArchive)"><i data-toggle="tooltip" data-placement="bottom" title="Make a copy" class="fa fa-clone fa-lg" aria-hidden="true"></i></a></div>
                               </div>
                           </div>
                       </div>
