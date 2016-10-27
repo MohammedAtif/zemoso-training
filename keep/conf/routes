@@ -48,3 +48,5 @@ GET     /toReminders                controllers.HomeController.gReminder
 
 GET     /getReminder                controllers.HomeController.getReminder
 
+POST    /updatePositions            controllers.HomeController.updatePositions
+

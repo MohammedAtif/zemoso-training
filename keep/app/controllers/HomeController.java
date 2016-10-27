@@ -172,6 +172,23 @@ public class HomeController extends Controller {
         return ok(HomeController.buildJsonResponse("success", "Post added successfully"));
     }
 
+    public Result updatePositions(){
+        JsonNode jsonNode=request().body().asJson();
+        String positions=jsonNode.path("positions").asText();
+        String ids=jsonNode.path("ids").asText();
+        String pos[]=positions.split(" ");
+        String iDs[]=ids.split(" ");
+
+        for(int i=0;i<pos.length;i++){
+            System.out.println(iDs[i]);
+            Card c=new Card(Integer.parseInt(pos[i]),Long.parseLong(iDs[i]));
+                c.update();
+        }
+        System.out.println("****************************************************************"+ids);
+        return ok(HomeController.buildJsonResponse("success", "Post added successfully"));
+    }
+
+
     public Result copyCards(){
         JsonNode jsonNode=request().body().asJson();
         String user=jsonNode.path("user").asText();

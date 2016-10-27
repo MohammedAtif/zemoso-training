@@ -39,6 +39,9 @@ public class Card extends Model{
     @Column(columnDefinition="int default 0")
     private Integer isArchive;
 
+    @Column(columnDefinition="int default 0")
+    private Integer positions;
+
     public Card(String user, String title, String content, String remainder, int isArchive, int isReminderActive) {
         this.setUser(user);
         this.setTitle(title);
@@ -65,13 +68,22 @@ public class Card extends Model{
             this.setIsArchive(0);
         }
     }
+    public Card(int pos,long id){
+        System.out.println(pos+"Hello aye aye captain"+id);
+        this.setCardId(id);
+        this.setPosition(pos);
+    }
+
+    private void setPosition(int pos) {
+        this.positions=pos;
+    }
 
     public Card(long id){
         this.setCardId(id);
         this.setIsReminderActive(0);
     }
     public static List<Card> getData(String email) {
-        return Card.find.where().eq("user",email).eq("isArchive",0).findList();
+        return Card.find.where().eq("user",email).eq("isArchive",0).orderBy("positions").findList();
     }
 
     public static List<Card> getArchive(String email) {

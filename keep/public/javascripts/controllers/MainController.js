@@ -1,4 +1,48 @@
+
+
 app.controller("HttpGetController", function ($scope, $http) {
+
+    var posArray={};
+    var length;
+    $scope.updatePosition=function (oldPos,newPos) {
+        var temp=posArray[newPos];
+        posArray[newPos]=posArray[oldPos];
+        if(oldPos<newPos) {
+            while (newPos > 0) {
+                var t = posArray[--newPos];
+                posArray[newPos] = temp;
+                temp = t;
+            }
+        }
+        else if(oldPos>newPos){
+            while (newPos < oldPos) {
+                var t = posArray[++newPos];
+                posArray[newPos] = temp;
+                temp = t;
+            }
+        }
+        console.log(posArray);
+        var pos="";
+        var ids="";
+        for(var i=0;i<length;i++){
+            //alert("in");
+            pos+= i.toString()+' ';
+            ids+= posArray[i].toString()+" ";
+        }
+        //alert(ids);
+        var data ={
+            positions:pos,
+            ids:ids
+        };
+        $http.post('updatePositions', data)
+            .success(function (data) {
+                //$log.debug(data);
+                $scope.getPosts();
+            });
+    }
+
+
+
     $scope.sendData = function () {
         // use $.param jQuery function to serialize data from JSON
         if(!($scope.title==undefined && $scope.content==undefined)) {
@@ -128,6 +172,11 @@ app.controller("HttpGetController", function ($scope, $http) {
                 var low=new Date();
                 var title=null;
                 var id=null;
+                for(var i=0;i<($scope.posts).length;i++){
+                    posArray[i]=$scope.posts[i].id;
+                }
+                console.log(posArray);
+                length=($scope.posts).length;
                 //console.log($scope.posts);
                 for(var p=0;p<($scope.posts).length;p++){
                     var date = new Date(($scope.posts[p]).reminder);

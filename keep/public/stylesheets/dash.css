@@ -15,7 +15,7 @@
     width: 100%;
     background-color: rgb(250, 250, 250);
     text-align: left;
-    padding: 12px 15px 15px 15px;
+    padding: 12px 15px 5px 15px;
     font-size: 17px;
     font-weight: bold;
     line-height: 23px;
@@ -76,11 +76,13 @@ body{
     padding-top: 30px;
 }
 .eachCard{
-    /*padding:0 !important;*/
+    padding:0 !important;
     float: left;
     margin-top: 20px;
     width: 100%;
     display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
 
 
 }
@@ -97,10 +99,10 @@ body{
     font-weight: bold;
 }
 textarea{
+    padding-top : 10px;
     border: 0 none;
     margin: 0;
     outline: 0 none;
-    padding: 0;
     width: 100%;
     height: 40px;
     background-color: #FAFAFA;
@@ -161,4 +163,17 @@ button.close{
 }
 .itemList:hover{
     background-color: #E2E2E2;
+}
+
+.no-padding {
+    padding-left: 1px !important;
+}
+/* ghostClass */
+.ghost {
+    opacity: 0;
+}
+
+.chosen {
+    color: black;
+
 }

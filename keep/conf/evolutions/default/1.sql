@@ -12,6 +12,7 @@ create table card (
   reminder                      TEXT,
   is_reminder_active            int default 0,
   is_archive                    int default 0,
+  positions                     int default 0,
   constraint pk_card primary key (id)
 );
 

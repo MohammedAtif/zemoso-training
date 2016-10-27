@@ -42,22 +42,27 @@
         <!--<script src="//cdn.jsdelivr.net/sortable/latest/Sortable.min.js"></script>-->
         <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
         <script src="http://rubaxa.github.io/Sortable/ng-sortable.js"></script>
+        <!--Angular drag and drop-->
+        @*<script src="@routes.Assets.versioned("javascripts/angular-drag-and-drop-lists.min.js")" type="text/javascript"></script>
+        @*<script src="@routes.Assets.versioned("javascripts/jquery.shapeshift.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/angular-shapeshift.js")" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/angular-shapeshift.css")">*@
     </head>
     <body>
 
             <!-- Top Bar -->
-        <nav class="navbar-custom navbar navbar-static-top">
-            <div class="navbar-header">
-                <div class="cent col-md-1"><a href="#menu-toggle" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></div>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><h2 class="zemofnt fontrobo colBlack ">Keep</h2></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active padright"><a href="@routes.HomeController.logout">Sign out</a></li>
-                </ul>
-            </div>
+        <nav class="navbar-custom navbar navbar-fixed-top">
+                <div class="navbar-header">
+                    <div class="cent col-md-1"><a href="#menu-toggle" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><h2 class="zemofnt fontrobo colBlack ">Keep</h2></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active padright"><a href="@routes.HomeController.logout">Sign out</a></li>
+                    </ul>
+                </div>
         </nav>
 
         <div id="wrapper" class="toggled">
