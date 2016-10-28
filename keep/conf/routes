@@ -19,8 +19,6 @@ POST    /regis                      controllers.HomeController.register
 GET     /dash                       controllers.HomeController.Dash
 
 POST	/addPost					controllers.HomeController.addCards()
-#DOUBT1
-GET     /addPost                    controllers.HomeController.Dash
 
 POST	/updatePost					controllers.HomeController.updateCards()
 

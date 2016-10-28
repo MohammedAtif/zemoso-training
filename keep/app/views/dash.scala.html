@@ -4,7 +4,7 @@
 
 @main("Notes") {
     <div id="myId"ng-app="myAppName" ng-controller="HttpGetController">
-            <form id="myForm" action="@routes.HomeController.addCards">
+
                 <div class="form-group">
                     <div class="note col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
                         <input ng-model="user" ng-init="user='@userEmail'" name="user" type="hidden">
@@ -29,12 +29,11 @@
                             </div>
                             </div>
                             <div class="col-md-10">
-                            <div align="right" > <button class="done" ng-click="sendData();showRest=false">Done</button> </div>
+                            <div align="right" > <button class="done" ng-click="sendData();showRest=false;title=null;content=null;reminderTime=null;">Done</button> </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </form>
 
 
 
@@ -46,12 +45,12 @@
                 <div id="items" class="no-padding col-md-10 col-md-offset-2">
                     <div ng-repeat="post in posts">
                         <div class="col-md-3 eachCard" ng-click="addDataToModal(post.user,post.id,post.title,post.content,post.reminder,0,0)">
-                            <div class="card" >
+                            <div class="card" ng-clock>
                                 <input ng-model="id" name="id" ng-value="post.id" type="hidden">
                                 <div class="clickd">
-                                    <div name="title" class="title" contenteditable="false">{{ post.title }}</div>
-                                    <div name="content" class="content" contenteditable="false">{{ post.content }}</div>
-                                    <div name="reminder" class="remind" contenteditable="false"><div class="remindText">{{post.reminder}}</div></div>
+                                    <div name="title" class="title wordWrap" contenteditable="false" ng-cloak>{{ post.title }}</div>
+                                    <div name="content" class="content wordWrap" contenteditable="false" ng-cloak>{{ post.content }}</div>
+                                    <div name="reminder" class="remind" contenteditable="false"><div class="remindText" ng-cloak>{{post.reminder}}</div></div>
                                 </div>
                                 <div class="toolbar">
                                     <div class="inner col-md-offset-2">

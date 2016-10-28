@@ -6,15 +6,15 @@
 
       <div class="padTopMore col-md-12">
           <div class="row rowWithFullWidth col-md-12">
-              <div ng-sortable="{animation:150}" class="no-padding col-md-10 col-md-offset-2">
+              <div id="items" class="no-padding col-md-10 col-md-offset-2">
                   <div ng-repeat="post in postsReminder">
                       <div class="col-md-3 eachCard" ng-click="addDataToModal(post.user,post.id,post.title,post.content,post.reminder,0,0)">
                           <div class="card" >
                               <input ng-model="id" name="id" ng-value="post.id" type="hidden">
                               <div class="clickd">
-                                  <div name="title" class="title" contenteditable="false">{{ post.title }}</div>
-                                  <div name="content" class="content" contenteditable="false">{{ post.content }}</div>
-                                  <div name="reminder" class="remind" contenteditable="false"><div class="remindText">{{post.reminder}}</div></div>
+                                  <div name="title" class="title wordWrap" contenteditable="false" ng-cloak>{{ post.title }}</div>
+                                  <div name="content" class="content wordWrap" contenteditable="false" ng-cloak>{{ post.content }}</div>
+                                  <div name="reminder" class="remind" contenteditable="false"><div class="remindText" ng-cloak>{{post.reminder}}</div></div>
                               </div>
                               <div class="toolbar">
                                   <div class="inner">
@@ -100,6 +100,13 @@
   </div>
 
   <script>
+          Sortable.create(items, {
+              sort: true,
+              animation: 150,
+              ghostClass: 'ghost',
+              chosenClass: 'chosen',
+          });
+
           $(function () {
             $('.datetimepicker4').datetimepicker();
           });

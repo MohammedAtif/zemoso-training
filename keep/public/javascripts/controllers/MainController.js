@@ -163,7 +163,8 @@ app.controller("HttpGetController", function ($scope, $http) {
                     $scope.getPosts();
                 });
         };
-
+var x;
+    var timeOut;
     $scope.getPosts = function() {
         $http.get('getPosts')
             .success(function(data) {
@@ -175,7 +176,7 @@ app.controller("HttpGetController", function ($scope, $http) {
                 for(var i=0;i<($scope.posts).length;i++){
                     posArray[i]=$scope.posts[i].id;
                 }
-                console.log(posArray);
+                //console.log(posArray);
                 length=($scope.posts).length;
                 //console.log($scope.posts);
                 for(var p=0;p<($scope.posts).length;p++){
@@ -183,9 +184,7 @@ app.controller("HttpGetController", function ($scope, $http) {
                     //window.alert(date>low);
                     if(($scope.posts[p]).isReminderActive===1){
                         if(date>now) {
-                            //window.alert("Fully inside one");
                             if (date > low) {
-                                //window.alert("Fully inside one");
                                 low = date;
                                 title = $scope.posts[p].title;
                                 id=$scope.posts[p].id;
@@ -197,9 +196,6 @@ app.controller("HttpGetController", function ($scope, $http) {
                 for(var p=0;p<($scope.posts).length;p++){
                     var date = new Date(($scope.posts[p]).reminder);
                     if($scope.posts[p].isReminderActive===1) {
-                        //window.alert("hello inside");
-                        //window.alert(low + "<" + date);
-                        //window.alert(low < date);
                         if (date > now) {
                             if (low < date) {
 
@@ -209,15 +205,15 @@ app.controller("HttpGetController", function ($scope, $http) {
                                 title = $scope.posts[p].title;
                                 id=$scope.posts[p].id;
                             }
-                            //window.alert(low);
                         }
                     }
                 }
-                var x=(low.getTime()-now.getTime())/1000;
+                x=(low.getTime()-now.getTime())/1000;
+                clearTimeout(timeOut);
                 //alert(x);
                 //var x=(low.getTime()-now.getTime())/1000;
                 if(x>0){
-                    setTimeout(function(){ alert(title);$scope.updateReminder(id); }, x*1000);
+                    timeOut=setTimeout(function(){ alert(title);$scope.updateReminder(id); }, x*1000);
                 }
             });
     };

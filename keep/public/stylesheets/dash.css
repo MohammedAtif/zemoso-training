@@ -175,5 +175,8 @@ button.close{
 
 .chosen {
     color: black;
+}
 
+.wordWrap{
+    word-wrap: break-word;
 }

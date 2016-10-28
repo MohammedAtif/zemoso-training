@@ -184,7 +184,7 @@ public class HomeController extends Controller {
             Card c=new Card(Integer.parseInt(pos[i]),Long.parseLong(iDs[i]));
                 c.update();
         }
-        System.out.println("****************************************************************"+ids);
+        //System.out.println("****************************************************************"+ids);
         return ok(HomeController.buildJsonResponse("success", "Post added successfully"));
     }
 
@@ -220,18 +220,27 @@ public class HomeController extends Controller {
         }
     }
     public Result gArchive(){
-        return ok(archive.render(session().get("email")));
+        if(!(session().get("email")==null)){
+            return ok(archive.render(session().get("email")));
+        }
+        else{
+            return redirect(routes.HomeController.index());
+        }
     }
     public Result getArchive(){
         List<Card> card= Card.getArchive(session().get("email"));
         return ok(Json.toJson(card));
     }
     public Result gReminder(){
-        return ok(reminder.render(session().get("email")));
+        if(!(session().get("email")==null)){
+            return ok(reminder.render(session().get("email")));
+        }
+        else{
+            return redirect(routes.HomeController.index());
+        }
     }
     public Result getReminder(){
         List<Card> card = Card.getReminder(session().get("email"));
-        System.out.print("This is happening");
         return ok(Json.toJson(card));
     }
 

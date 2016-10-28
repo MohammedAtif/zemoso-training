@@ -69,7 +69,6 @@ public class Card extends Model{
         }
     }
     public Card(int pos,long id){
-        System.out.println(pos+"Hello aye aye captain"+id);
         this.setCardId(id);
         this.setPosition(pos);
     }
