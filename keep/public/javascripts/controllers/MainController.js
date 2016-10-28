@@ -58,6 +58,9 @@ app.controller("HttpGetController", function ($scope, $http) {
                     //$log.debug(data);
                     $scope.getPosts();
                 });
+            delete $scope.title;
+            delete $scope.content;
+            delete $scope.reminderTime;
         }
     };
     $scope.sortableOptions = {
