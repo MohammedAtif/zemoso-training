@@ -17,11 +17,12 @@ create table card (
 );
 
 create table registration (
-  id                            bigint auto_increment not null,
-  name                          varchar(255),
-  email                         varchar(255),
-  password                      varchar(255),
-  constraint pk_registration primary key (id)
+  user_id                       bigint auto_increment not null,
+  user_name                     varchar(255),
+  user_email                    varchar(255),
+  user_password                 varchar(255),
+  timestamp                     timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  constraint pk_registration primary key (user_id)
 );
 
 

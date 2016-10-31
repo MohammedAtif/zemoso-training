@@ -1,5 +1,46 @@
+login.controller("loginHttpGetController", function ($scope, $http, $location) {
+    $scope.login = function() {
+        var data = {
+            userEmail: $scope.email,
+            userPassword: $scope.password
+        };
+        console.log(data);
+        $http.post('/', data)
+            .success(function (data) {
+                location.href = '/dash';
+            })
+            .error(function (data) {
+                //alert("error");
+                $scope.alertMessage=data;
+            })
+    };
+});
 
+signup.controller("SignupHttpGetController", function ($scope, $http) {
+    $scope.signup = function() {
+        var regex = /^[a-zA-Z ]{2,30}$/;
+        if (!(regex.test($scope.userName))) {
+            $scope.alertMessage="Name should not contain numbers or special characters!";
+        }
+        else {
 
+            var data = {
+                userName: $scope.userName,
+                userEmail: $scope.userEmail,
+                userPassword: $scope.userPassword
+            };
+            console.log(data);
+            $http.post('regis', data)
+                .success(function (data) {
+                    location.href = '/dash';
+                })
+                .error(function (data) {
+                    $scope.alertMessage = data;
+                })
+        }
+    };
+
+});
 app.controller("HttpGetController", function ($scope, $http) {
 
     var posArray={};
@@ -46,12 +87,13 @@ app.controller("HttpGetController", function ($scope, $http) {
     $scope.sendData = function () {
         // use $.param jQuery function to serialize data from JSON
         if(!($scope.title==undefined && $scope.content==undefined)) {
-
+            alert($scope.color);
             var data = {
                 user: $scope.user,
                 title: $scope.title,
                 content: $scope.content,
-                reminder: $scope.reminderTime
+                reminder: $scope.reminderTime,
+                color:$scope.color
             };
             $http.post('addPost', data)
                 .success(function (data) {

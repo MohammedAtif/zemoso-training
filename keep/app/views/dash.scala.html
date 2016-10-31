@@ -1,34 +1,42 @@
-@(userEmail: String,tasks:List[Card])
-
-
+@(userEmail: String)
 
 @main("Notes") {
-    <div id="myId"ng-app="myAppName" ng-controller="HttpGetController">
+    <div id="myId" ng-app="myAppName"  ng-controller="HttpGetController">
 
                 <div class="form-group">
                     <div class="note col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
                         <input ng-model="user" ng-init="user='@userEmail'" name="user" type="hidden">
 
-                        <div ng-show="showRest" id="titleDiv" class="title" ><input ng-model="title" class="textDivInp" placeholder="Title" name="title" type="text"></div>
+                        <div ng-show="showRest" id="titleDiv" ng-style="{'background-color':$scope.color;}" class="title" ng-cloak><input ng-model="title" class="textDivInp" placeholder="Title" name="title" type="text"></div>
                         <div id="contentDiv" class="content">
                             <textarea ng-focus="showRest = true" ng-model="content" placeholder="Take a note..." name="content"></textarea>
                         </div>
 
-                        <div ng-show="showRest" id="toolbarDiv" class="toolbar">
+                        <div ng-show="showRest" id="toolbarDiv" class="toolbar" ng-cloak>
                             <div class="col-md-2">
-                            <div class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell fa lg" data-toggle="tooltip" data-placement="bottom" title="Set Reminder" aria-hidden="true"></i>
-                                   </a>
-                                <div class="dropdown-menu">
-                                    <div class="container1">
-                                        <!--<input ng-model="reminderTime" class="form-control" id='datetimepicker4' placeholder="Pick The time." name="reminderTime" type="text">-->
-                                        <input ng-model="reminderTime" class="form-control datetimepicker4" type='text' name="reminderTime" placeholder="Select Time"/>
-                                        <span id="clear" class="glyphicon glyphicon-remove-circle"></span>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell fa lg" data-toggle="tooltip" data-placement="bottom" title="Set Reminder" aria-hidden="true"></i>
+                                       </a>
+                                    <div class="dropdown-menu">
+                                        <div class="container1">
+                                            <!--<input ng-model="reminderTime" class="form-control" id='datetimepicker4' placeholder="Pick The time." name="reminderTime" type="text">-->
+                                            <input ng-model="reminderTime" class="form-control datetimepicker4" type='text' name="reminderTime" placeholder="Select Time"/>
+                                            <span id="clear" class="glyphicon glyphicon-remove-circle"></span>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
+                            <div class="col-md-3">
+                                <select id="colorselector" ng-model="color">
+                                    <option value="#FAFAFA" data-color="#FAFAFA" selected="selected"></option>
+                                    <option value="#FFD180" data-color="#FFD180"></option>
+                                    <option value="#FF8A80" data-color="#FF8A80"></option>
+                                    <option value="#CCFF90" data-color="#CCFF90"></option>
+                                    <option value="#FFFF8D" data-color="#FFFF8D"></option>
+                                </select>
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-7">
                             <div align="right" > <button class="done" ng-click="sendData();showRest=false;">Done</button> </div>
                             </div>
                         </div>
@@ -40,7 +48,7 @@
 
 
 
-        <div class="padTopMore col-md-12">
+        <div class="padTopMore col-md-12" ng-cloak>
             <div class="row rowWithFullWidth col-md-12">
                 <div id="items" class="no-padding col-md-10 col-md-offset-2">
                     <div ng-repeat="post in posts">
@@ -94,7 +102,7 @@
                                 <div class="remind">
                                     <div class="container2">
                                             <!--<input ng-model="reminderTime" class="form-control" id='datetimepicker4' placeholder="Pick The time." name="reminderTime" type="text">-->
-                                        <input id="editTime" data-ng-model="data.reminder" class="form-control datetimepicker4" type='text' name="reminderTime" placeholder="No Reminder!"/>
+                                        <input id="editTime" data-ng-model="data.reminder" class="timeInp datetimepicker4" type='text' name="reminderTime" placeholder="No Reminder!"/>
                                         <!--<span id="clear1" class="glyphicon glyphicon-remove-circle"></span>-->
                                     </div>
                                 </div>
@@ -112,6 +120,7 @@
     </div>
 
 <script>
+        $('#colorselector').colorselector();
 
         Sortable.create(items, {
             sort: true,
@@ -120,11 +129,10 @@
             chosenClass: 'chosen',
             onUpdate: function (/**Event*/evt) {
                 var itemEl = evt.item;  // dragged HTMLElement
-                // + indexes from onEnd
                 angular.element(document.getElementById('myId')).scope().updatePosition(evt.oldIndex,evt.newIndex);
-                //alert(evt.oldIndex+" "+evt.newIndex);
             },
         });
+
 
         $(function () {
                     $('.datetimepicker4').datetimepicker();
@@ -148,18 +156,11 @@
 
 
         $(document).on('click', '.clickd', function () {
-            // your function here
-            //alert("Hello");
             $('#myModal').modal('show');
         });
         $(document).on('click', '#updateButton', function () {
-            // your function here
-            //alert("Hello");
             $('#myModal').modal('toggle');
         });
-
-
-
 
 </script>
 }

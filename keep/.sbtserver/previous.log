@@ -1,5 +1,5 @@
-New log file opened at Fri Oct 28 15:19:03 IST 2016 by 14960@zemoso-Lenovo-G580
-jvm 14960@zemoso-Lenovo-G580
+New log file opened at Mon Oct 31 12:42:44 IST 2016 by 16602@zemoso-Lenovo-G580
+jvm 16602@zemoso-Lenovo-G580
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.111-b14
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/zemoso/play/keep/project, returning: (keep-build)
 Loading project definition from /home/zemoso/play/keep/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@33737394, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@20d3204f, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -73,4 +73,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 14960@zemoso-Lenovo-G580 logs at Fri Oct 28 15:19:15 IST 2016, goodbye.
+Closing the 16602@zemoso-Lenovo-G580 logs at Mon Oct 31 12:43:04 IST 2016, goodbye.

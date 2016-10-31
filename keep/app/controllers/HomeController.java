@@ -4,26 +4,23 @@ import com.avaje.ebean.Ebean;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.Card;
-import models.Login;
 import models.Registration;
 
 import play.mvc.*;
 
 import views.html.*;
 
-import java.io.IOException;
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static play.data.Form.form;
 
 import play.libs.Json;
+import org.mindrot.jbcrypt.BCrypt;
 
 
 /**
@@ -45,21 +42,28 @@ public class HomeController extends Controller {
     }
 
     public Result loginPost(){
-        Login login1=form(Login.class).bindFromRequest().get();
-        String email=login1.email;
-        String password=login1.password;
-        Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(email);
+        JsonNode jsonNode=request().body().asJson();
+        String userEmail=jsonNode.path("userEmail").asText();
+        String userPassword=jsonNode.path("userPassword").asText();
+        Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(userEmail);
         if(!matcher.find()){
-            return ok(index.render("Not a valid email!! Please try again."));
+            return badRequest("Not a valid email!! Please try again.");
         }
-        if(Registration.authenticate(email,password)!=null){
-            session().clear();
-            session("email",email);
-            //return ok(dash.render(email));
-            return redirect(routes.HomeController.Dash());
+        Registration user = Ebean.find(Registration.class).where().eq("userEmail", userEmail).findUnique();
+        if(user==null){
+            return badRequest("Email is not registered!!");
         }
-        else{
-            return ok(index.render("Incorrect password or email..Login Failed!"));
+        else {
+            String db_password = user.getUserPassword();
+            if (BCrypt.checkpw(userPassword, db_password)) {
+                session().clear();
+                session("email", userEmail);
+                return ok("Login Successs");
+            }
+            else{
+                return badRequest("Password is wrong! Please try again.");
+            }
+
         }
 
     }
@@ -67,24 +71,29 @@ public class HomeController extends Controller {
     public Result regis(){ return ok(registration.render(""));}
 
     public Result register(){
-        Registration reg= form(Registration.class).bindFromRequest().get();
-        String email=reg.email;
-        Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(email);
-        if(!matcher.find()){
-            return ok(registration.render("Not a valid email! Please try again."));
+        JsonNode jsonNode=request().body().asJson();
+        String userName=jsonNode.path("userName").asText();
+        String userEmail=jsonNode.path("userEmail").asText();
+        String userPassword=jsonNode.path("userPassword").asText();
+        String hashed = BCrypt.hashpw(userPassword, BCrypt.gensalt(12));
+        Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(userEmail);
+        System.out.println(userName+""+userEmail+""+userPassword);
+
+        if(userEmail.equals("")||userPassword.equals("")||userName.equals("")||userEmail.equals("")||userPassword.equals("")||userName.equals("")){
+            return badRequest("Fields cannot be empty or null.");
         }
-        if(Registration.isPresent(email)!=null){
-            return ok(index.render("Mail id is already registered.Try logging in!!"));
+        else if(!matcher.find()){
+            return badRequest("Not a valid email! Please try again.");
         }
-        else if(reg.email==null||reg.password==null||reg.name==null||reg.email.equals("")||reg.password.equals("")||reg.name.equals("")){
-            return ok(index.render("Fields cannot be empty or null."));
+        else if(Registration.isPresent(userEmail)!=null){
+            return badRequest("Mail id is already registered.Try logging in!!");
         }
         else {
+            Registration reg=new Registration(userName,userEmail,hashed);
             reg.save();
-            email = reg.email;
             session().clear();
-            session("email", email);
-            return redirect(routes.HomeController.Dash());
+            session("email", userEmail);
+            return ok("Success");
         }
     }
 
@@ -94,17 +103,13 @@ public class HomeController extends Controller {
         String title=jsonNode.path("title").asText();
         String content=jsonNode.path("content").asText();
         String reminder=jsonNode.path("reminder").asText();
-        //int isArchive=jsonNode.path("isArchive").asInt();
         int isActive=0;
         String rem=reminder;
-
-        System.out.println(title+"**********************************"+content);
+        //System.out.println(title+"**********************************"+content);
             if (reminder != "") {
                 Date now = new Date();
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a");
                 SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("MM/dd/yyyy HH:mm");
-
-
                 //reminder=(simpleDateFormat1.format(simpleDateFormat.parse(reminder)));
                 try {
                     reminder = (simpleDateFormat1.format(simpleDateFormat.parse(reminder)));
@@ -213,7 +218,7 @@ public class HomeController extends Controller {
     public Result Dash(){
         List<Card> card= Card.getData(session().get("email"));
         if(!(session().get("email")==null)){
-        return ok(dash.render(session().get("email"),card));
+        return ok(dash.render(session().get("email")));
         }
         else{
             return redirect(routes.HomeController.index());
