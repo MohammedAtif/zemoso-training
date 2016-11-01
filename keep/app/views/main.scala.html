@@ -4,7 +4,7 @@
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
  *@
-@(title: String)(content: Html)
+@(title: String,userEmail: String)(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,8 +61,16 @@
                         <li class="active"><h2 class="zemofnt fontrobo colBlack ">Keep</h2></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active padright"><a href="@routes.HomeController.logout">Sign out</a></li>
+                        <li class="active padright"><a class="black" href="@routes.HomeController.logout">Signout</a></li>
                     </ul>
+                    <div class="col-md-8 padtopSearch">
+                        <form class="navbar-form" role="search">
+                            <div class="searchBox input-group">
+                                <input onfocus="myFunction()" type="text" class="search form-control" placeholder="Search" name="q">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="userName pull-right">@userEmail</div>
                 </div>
         </nav>
 
@@ -101,3 +109,8 @@
         <script src="@routes.Assets.versioned("javascripts/controllers/MainController.js")"></script>
     </body>
 </html>
+    <script>
+            function myFunction(x) {
+                location.href='/search';
+            }
+    </script>

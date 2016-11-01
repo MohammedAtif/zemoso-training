@@ -1,0 +1,146 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String,userEmail: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+
+            @* Here's where we render the page title `String`. *@
+            <title>@title</title>
+                <!--Style Sheets-->
+            <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+            <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/dash.css")">
+                <!-- Jquery -->
+            <script type="text/javascript" src="@routes.Assets.versioned("javascripts/jquery-3.1.1.min.js")"></script>
+                <!--Jquery UI-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                <!--google fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+                <!--Font Awesome -->
+            <link rel="stylesheet" href="@routes.Assets.versioned("font-awesome/css/font-awesome.min.css")">
+                <!--BootStrap css-->
+            <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
+                <!--Bootstrap js-->
+            <script src="@routes.Assets.versioned("bootstrap/js/bootstrap.js")" type="text/javascript"></script>
+                <!--AngularJS-->
+            <script type="text/javascript" src="@routes.Assets.versioned("javascripts/angular.min.js")"></script>
+                <!--SideBar -->
+            <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/simple-sidebar.css")">
+                <!-- Java Script-->
+            <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+                <!-- BootStrap Date Time Picker-->
+            <script type="text/javascript" src="@routes.Assets.versioned("javascripts/moment.js")"></script>
+            <script type="text/javascript" src="@routes.Assets.versioned("javascripts/bootstrap-datetimepicker.min.js")"></script>
+            <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap-datetimepicker.min.css")">
+                <!--Rubaxa Sortable -->
+                <!--<script src="//cdn.jsdelivr.net/sortable/latest/Sortable.min.js"></script>-->
+            <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
+            <script src="http://rubaxa.github.io/Sortable/ng-sortable.js"></script>
+                <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap-colorselector.css")">
+
+                <!-- Latest compiled and minified JavaScript -->
+            <script type="text/javascript" src="@routes.Assets.versioned("javascripts/bootstrap-colorselector.js")"></script>
+
+        </head>
+  <body ng-app="searchApp" ng-controller="searchHttpGetController">
+
+      <nav class="navbar-customSearch navbar navbar-fixed-top">
+          <div class="navbar-header">
+              <div class="cent col-md-1"><a href="#menu-toggle" id="menu-toggle"><span class="white glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></div>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li class="active"><h2 class="white zemofnt fontrobo colBlack ">Keep</h2></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="active padright"><a class="white" href="@routes.HomeController.logout">Signout</a></li>
+              </ul>
+              <div class="col-md-8 padtopSearch">
+                  <form class="navbar-form" role="search">
+                      <div class="searchBox input-group">
+                          <input id="search" type="text" ng-model="query[queryBy]" class="search form-control" placeholder="Search" name="q">
+                      </div>
+                  </form>
+              </div>
+              <div class="white userName pull-right">@userEmail</div>
+          </div>
+      </nav>
+
+      <div id="wrapper" class="toggled">
+              <!-- Sidebar -->
+          <div id="sidebar-wrapper">
+              <ul class="sidebar-nav">
+                  <li class="itemList">
+                      <a href="@routes.HomeController.Dash()">
+                          <div class="col-md-3"><i class="fa fa-sticky-note fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Notes</div>
+                      </a>
+                  </li>
+                  <li class="itemList">
+                      <a href="@routes.HomeController.gArchive()">
+                          <div class="col-md-3"><i class="fa fa-archive fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Archive</div>
+
+                      </a>
+                  </li>
+                  <li class="itemList">
+                      <a href="@routes.HomeController.gReminder()">
+                          <div class="col-md-3"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></div><div class="col-md-9">Reminder</div>
+
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          @* And here's where we render the `Html` object containing
+          * the page content. *@
+
+          @content
+      </div>
+          <!-- Modules -->
+      <script src="@routes.Assets.versioned("javascripts/app.js")"></script>
+
+          <!-- Controllers -->
+      <script src="@routes.Assets.versioned("javascripts/controllers/MainController.js")"></script>
+  </body>
+
+</html>
+<script>
+        window.onload = function(){
+            document.getElementById("search").focus();
+        };
+
+        $(function () {
+            $('.datetimepicker4').datetimepicker();
+        });
+        $('.datetimepicker4').blur(function () {
+            angular.element($('.datetimepicker4')).triggerHandler('input');
+        })
+        $('#editTime').blur(function () {
+            angular.element($('#editTime')).triggerHandler('input');
+        })
+        $('#clear1').blur(function () {
+            angular.element($('#editTime')).triggerHandler('input');
+        })
+        $("#clear").click(function(){
+            $(".datetimepicker4").val('');
+        });
+
+        $("#clear1").click(function(){
+            $(".datetimepicker4").val('');
+        });
+
+
+        $(document).on('click', '.clickd', function () {
+            $('#myModal').modal('show');
+        });
+        $(document).on('click', '#updateButton', function () {
+            $('#myModal').modal('toggle');
+        });
+</script>

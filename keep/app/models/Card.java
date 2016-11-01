@@ -84,6 +84,9 @@ public class Card extends Model{
     public static List<Card> getData(String email) {
         return Card.find.where().eq("user",email).eq("isArchive",0).orderBy("positions").findList();
     }
+    public static List<Card> getDataAll(String email) {
+        return Card.find.where().eq("user",email).orderBy("positions").findList();
+    }
 
     public static List<Card> getArchive(String email) {
         return Card.find.where().eq("user",email).eq("isArchive",1).findList();

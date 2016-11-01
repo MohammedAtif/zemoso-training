@@ -6,6 +6,17 @@
     margin-bottom: 0px; !important;
     box-shadow: 0px 2px 5px #CACACA;
 }
+.navbar-customSearch {
+    background-color:#3E50B4;
+    color:#ffffff;
+    height: 64px;
+    border-radius:0; !important;
+    margin-bottom: 0px; !important;
+    box-shadow: 0px 2px 5px #CACACA;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+}
 .fontrobo{
     font-family: 'Roboto', sans-serif;
 }
@@ -39,10 +50,10 @@ color: black;
 }
 .inp:focus, .style-1 input.focus {
     font-family: 'Roboto', sans-serif;
-    border: 1px solid rgba(81, 203, 238, 1);
+    border: 1px solid grey;
     -webkit-box-shadow: 0 0 5px 1px #969696;
     -moz-box-shadow: 0 0 5px 1px #969696;
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px grey;
 }
 .error{
     color: #c0392b;
@@ -130,7 +141,8 @@ html { background: transparent }
     padding-top: 7px;
 }
 .nav>.padright>a:focus, .nav>.padright>a:hover{
-    background-color: #F5B400;
+    background-color: black;
+    opacity: .1;
 }
 body {
     padding-top: 65px;

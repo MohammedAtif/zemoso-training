@@ -1,3 +1,125 @@
+search.controller("searchHttpGetController",function ($scope,$http) {
+    $scope.query = {};
+    $scope.queryBy = '$';
+    var posArray={};
+    var length;
+    var x;
+    var timeOut;
+    $scope.del = function (id) {
+        var data = {
+            id:id
+        };
+        if(window.confirm("Are you sure?")) {
+            $http.post('del', data)
+                .success(function (data) {
+                    $scope.getPosts();
+                });
+        }
+    };
+    $scope.data={};
+    $scope.addDataToModal = function(user,id,title,content,reminder,isActive,isArchive) {
+        //console.log(user,id,title,content);
+        //alert(reminder);
+        $scope.data.user=user;
+        $scope.data.id=id;
+        $scope.data.title=title;
+        $scope.data.content=content;
+        $scope.data.reminder=reminder;
+    };
+
+    $scope.updateData = function () {
+        // use $.param jQuery function to serialize data from JSON
+        //alert($scope.data.content);
+        //alert($scope.data.reminder);
+        var data = {
+            id:$scope.data.id,
+            user:$scope.data.user,
+            title: $scope.data.title,
+            content: $scope.data.content,
+            reminder:$scope.data.reminder,
+            isArchive:0
+        };
+
+        $http.post('updatePost', data)
+            .success(function(data) {
+                $scope.getPosts();
+                //console.log("Hello");
+            })
+            .error(function (data) {
+                console.log(data);
+            });
+    };
+
+
+    $scope.updateReminder = function (id) {
+        // use $.param jQuery function to serialize data from JSON
+
+        //console.log(id);
+        var data = {
+            id:id
+        };
+        $http.post('updateReminder', data)
+            .success(function (data) {
+                $scope.getPosts();
+            });
+    };
+
+    $scope.getPosts = function() {
+        $http.get('getPostsAll')
+            .success(function(data) {
+                // console.log($scope.posts);
+                $scope.posts = data;
+                console.log($scope.posts);
+                var now=new Date();
+                var low=new Date();
+                var title=null;
+                var id=null;
+                for(var i=0;i<($scope.posts).length;i++){
+                    posArray[i]=$scope.posts[i].id;
+                }
+                //console.log(posArray);
+                length=($scope.posts).length;
+                //console.log($scope.posts);
+                for(var p=0;p<($scope.posts).length;p++){
+                    var date = new Date(($scope.posts[p]).reminder);
+                    //window.alert(date>low);
+                    if(($scope.posts[p]).isReminderActive===1){
+                        if(date>now) {
+                            if (date > low) {
+                                low = date;
+                                title = $scope.posts[p].title;
+                                id=$scope.posts[p].id;
+                                break;
+                            }
+                        }
+                    }
+                }
+                for(var p=0;p<($scope.posts).length;p++){
+                    var date = new Date(($scope.posts[p]).reminder);
+                    if($scope.posts[p].isReminderActive===1) {
+                        if (date > now) {
+                            if (low < date) {
+
+                            }
+                            else {
+                                low = date;
+                                title = $scope.posts[p].title;
+                                id=$scope.posts[p].id;
+                            }
+                        }
+                    }
+                }
+                x=(low.getTime()-now.getTime())/1000;
+                clearTimeout(timeOut);
+                //alert(x);
+                //var x=(low.getTime()-now.getTime())/1000;
+                if(x>0){
+                    timeOut=setTimeout(function(){ alert(title);$scope.updateReminder(id); }, x*1000);
+                }
+            });
+    };
+    $scope.getPosts();
+});
 login.controller("loginHttpGetController", function ($scope, $http, $location) {
     $scope.login = function() {
         var data = {
@@ -87,13 +209,12 @@ app.controller("HttpGetController", function ($scope, $http) {
     $scope.sendData = function () {
         // use $.param jQuery function to serialize data from JSON
         if(!($scope.title==undefined && $scope.content==undefined)) {
-            alert($scope.color);
+            //alert($scope.color);
             var data = {
                 user: $scope.user,
                 title: $scope.title,
                 content: $scope.content,
-                reminder: $scope.reminderTime,
-                color:$scope.color
+                reminder: $scope.reminderTime
             };
             $http.post('addPost', data)
                 .success(function (data) {

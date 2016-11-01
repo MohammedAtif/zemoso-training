@@ -28,6 +28,8 @@ GET     /updatePost                 controllers.HomeController.Dash
 
 GET	    /getPosts					controllers.HomeController.getPosts
 
+GET	    /getPostsAll				controllers.HomeController.getPostsAll
+
 POST    /del                        controllers.HomeController.del
 
 POST    /archive                    controllers.HomeController.archive
@@ -48,5 +50,9 @@ GET     /toReminders                controllers.HomeController.gReminder
 
 GET     /getReminder                controllers.HomeController.getReminder
 
-POST    /updatePositions            controllers.HomeController.updatePositions
+POST    /updatePositions            controllers.HomeController.updatePositions()
+
+GET     /search                     controllers.HomeController.search
+
+GET     /toSearch                   controllers.HomeController.gSearch
 

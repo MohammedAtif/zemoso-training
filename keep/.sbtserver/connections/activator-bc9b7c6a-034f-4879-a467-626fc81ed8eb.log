@@ -1,0 +1,36 @@
+New log file opened at Tue Nov 01 17:38:05 IST 2016 by 23809@zemoso-Lenovo-G580
+Sending msg to client activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /home/zemoso/play/keep/.sbtserver/connections/master.log))
+Sending msg to client activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /home/zemoso/play/keep/.sbtserver/master.log))
+Dropping message DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /home/zemoso/play/keep/.sbtserver/master.log)) because client activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb of an exception serializing and sending: java.net.SocketException: Broken pipe (Write failed)
+stack trace sending message was 
+java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:109)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+	at sbt.impl.ipc.Peer.send(IPC.scala:79)
+	at sbt.impl.ipc.Peer.send(IPC.scala:83)
+	at sbt.impl.ipc.Peer.sendString(IPC.scala:106)
+	at sbt.impl.ipc.Peer.sendJson(IPC.scala:119)
+	at sbt.server.SbtClientHandler$$anonfun$send$1.apply$mcV$sp(SbtClientHandler.scala:128)
+	at sbt.server.SbtClientHandler.wrappedSend(SbtClientHandler.scala:113)
+	at sbt.server.SbtClientHandler.send(SbtClientHandler.scala:128)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:92)
+Sending msg to client activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb: DetachedLogEvent(LogMessage(debug,sbt client logs are in: /home/zemoso/play/keep/.sbtserver/connections/activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb.log))
+Dropping message DetachedLogEvent(LogMessage(debug,sbt client logs are in: /home/zemoso/play/keep/.sbtserver/connections/activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb.log)) because client activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb of an exception serializing and sending: java.net.SocketException: socket is closed
+stack trace sending message was 
+java.net.SocketException: socket is closed
+	at sbt.impl.ipc.Peer.send(IPC.scala:74)
+	at sbt.impl.ipc.Peer.send(IPC.scala:83)
+	at sbt.impl.ipc.Peer.sendString(IPC.scala:106)
+	at sbt.impl.ipc.Peer.sendJson(IPC.scala:119)
+	at sbt.server.SbtClientHandler$$anonfun$send$1.apply$mcV$sp(SbtClientHandler.scala:128)
+	at sbt.server.SbtClientHandler.wrappedSend(SbtClientHandler.scala:113)
+	at sbt.server.SbtClientHandler.send(SbtClientHandler.scala:128)
+	at sbt.server.SbtClientHandler$clientThread$.run(SbtClientHandler.scala:42)
+Reading next message from client.
+Client activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb closed, java.net.SocketException: socket is closed, shutting down
+Dropping message (0,ReceivedResponse()) to dead client activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb
+Client activator-bc9b7c6a-034f-4879-a467-626fc81ed8eb thread exiting.

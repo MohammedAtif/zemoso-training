@@ -1,0 +1,77 @@
+@(userEmail: String)
+
+@search("search",userEmail) {
+<div class="padTopMore col-md-12" ng-cloak>
+  <div class="row rowWithFullWidth col-md-12">
+    <div id="items" class="no-padding col-md-10 col-md-offset-2">
+      <div ng-repeat="post in posts | filter:query">
+        <div class="col-md-3 eachCard" ng-click="addDataToModal(post.user,post.id,post.title,post.content,post.reminder,0,0)">
+          <div class="card" ng-clock>
+            <input ng-model="id" name="id" ng-value="post.id" type="hidden">
+            <div class="clickd">
+              <div name="title" class="title wordWrap" contenteditable="false" ng-cloak>{{ post.title.length>15? (post.title|limitTo:15):(post.title)}}<span ng-if="post.title.length>15">...</span></div>
+              <div name="content" class="content wordWrap" contenteditable="false" ng-cloak>{{ post.content.length>35? (post.content|limitTo:35):(post.content)}}<span ng-if="post.content.length>35">..</span></div>
+              <div name="reminder" class="remind" contenteditable="false"><div class="col-md-9 remindText" ng-cloak>{{post.reminder}}</div><div class="pull-right col-md-1"><span ng-if="post.isArchive==1">
+                  <i data-toggle="tooltip" data-placement="bottom" title="This note is archived" class="fa fa-archive fa-lg" aria-hidden="true"></i>
+              </span></div></div>
+            </div>
+            <div class="toolbar">
+              <div class="inner col-md-offset-2">
+                <div class="col-md-2 col-md-offset-3"><a ng-click="del(post.id)"><i data-toggle="tooltip" data-placement="bottom" title="Delete Note" class="fa fa-trash fa-lg" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+                <!-- Modal content-->
+
+            <div class="form-group">
+
+                <div class="note col-md-12">
+
+                    <input data-ng-model="data.user" type="hidden">
+                    <input data-ng-model="data.id" type="hidden">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div id="titleDiv" class="title" ><input data-ng-model="data.title" class="textDivInp" placeholder="Title" name="title" type="text"></div>
+                    <div id="contentDiv" class="content">
+                        <textarea data-ng-model="data.content" placeholder="Take a note..." name="content"></textarea>
+                    </div>
+                    <div class="remind">
+                        <div class="container2">
+                                <!--<input ng-model="reminderTime" class="form-control" id='datetimepicker4' placeholder="Pick The time." name="reminderTime" type="text">-->
+                            <input id="editTime" data-ng-model="data.reminder" class="timeInp datetimepicker4" type='text' name="reminderTime" placeholder="No Reminder!"/>
+                                <!--<span id="clear1" class="glyphicon glyphicon-remove-circle"></span>-->
+                        </div>
+                    </div>
+                    <div id="toolbarDiv" class="toolbar">
+                        <div align="right" > <button class="done" id="updateButton" ng-click="updateData()">Done</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+            Sortable.create(items, {
+                sort: true,
+                animation: 150,
+                ghostClass: 'ghost',
+                chosenClass: 'chosen',
+//                onUpdate: function (/**Event*/evt) {
+//                    var itemEl = evt.item;  // dragged HTMLElement
+//                    angular.element(document.getElementById('myId')).scope().updatePosition(evt.oldIndex,evt.newIndex);
+//                },
+            });
+    </script>
+
+}

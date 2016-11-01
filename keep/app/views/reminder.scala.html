@@ -1,6 +1,6 @@
 @(userEmail: String)
 
-@main("Reminders") {
+@main("Reminders",userEmail) {
   <div ng-app="myAppName2" ng-controller="ReminderHttpGetController">
 
 
@@ -12,9 +12,11 @@
                           <div class="card" >
                               <input ng-model="id" name="id" ng-value="post.id" type="hidden">
                               <div class="clickd">
-                                  <div name="title" class="title wordWrap" contenteditable="false" ng-cloak>{{ post.title }}</div>
-                                  <div name="content" class="content wordWrap" contenteditable="false" ng-cloak>{{ post.content }}</div>
-                                  <div name="reminder" class="remind" contenteditable="false"><div class="remindText" ng-cloak>{{post.reminder}}</div></div>
+                                  <div name="title" class="title wordWrap" contenteditable="false" ng-cloak>{{ post.title.length>15? (post.title|limitTo:15):(post.title)}}<span ng-if="post.title.length>15">...</span></div>
+                                  <div name="content" class="content wordWrap" contenteditable="false" ng-cloak>{{ post.content.length>35? (post.content|limitTo:35):(post.content)}}<span ng-if="post.content.length>35">..</span></div>
+                                  <div name="reminder" class="remind" contenteditable="false"><div class="col-md-9 remindText" ng-cloak>{{post.reminder}}</div><div class="pull-right col-md-1"><span ng-if="post.isArchive==1">
+                                      <i data-toggle="tooltip" data-placement="bottom" title="This note is archived" class="fa fa-archive fa-lg" aria-hidden="true"></i>
+                                  </span></div></div>
                               </div>
                               <div class="toolbar">
                                   <div class="inner">

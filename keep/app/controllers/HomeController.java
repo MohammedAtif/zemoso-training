@@ -43,7 +43,7 @@ public class HomeController extends Controller {
 
     public Result loginPost(){
         JsonNode jsonNode=request().body().asJson();
-        String userEmail=jsonNode.path("userEmail").asText();
+        String userEmail=jsonNode.path("userEmail").asText().toLowerCase();
         String userPassword=jsonNode.path("userPassword").asText();
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(userEmail);
         if(!matcher.find()){
@@ -73,7 +73,7 @@ public class HomeController extends Controller {
     public Result register(){
         JsonNode jsonNode=request().body().asJson();
         String userName=jsonNode.path("userName").asText();
-        String userEmail=jsonNode.path("userEmail").asText();
+        String userEmail=jsonNode.path("userEmail").asText().toLowerCase();
         String userPassword=jsonNode.path("userPassword").asText();
         String hashed = BCrypt.hashpw(userPassword, BCrypt.gensalt(12));
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(userEmail);
@@ -253,6 +253,10 @@ public class HomeController extends Controller {
         List<Card> card= Card.getData(session().get("email"));
         return ok(Json.toJson(card));
     }
+    public Result getPostsAll() {
+        List<Card> card= Card.getDataAll(session().get("email"));
+        return ok(Json.toJson(card));
+    }
     public Result del(){
         JsonNode jsonNode=request().body().asJson();
         String id=jsonNode.path("id").asText();
@@ -281,5 +285,22 @@ public class HomeController extends Controller {
         session().clear();
         flash("success", "You've been logged out");
         return redirect(routes.HomeController.index());
+    }
+    public Result search(){
+        if(!(session().get("email")==null)){
+            return ok(searchData.render(session().get("email")));
+        }
+        else{
+            return ok(searchData.render(session().get("email")));
+        }
+    }
+
+    public Result gSearch(){
+        if(!(session().get("email")==null)){
+            return ok(searchData.render(session().get("email")));
+        }
+        else{
+            return redirect(routes.HomeController.index());
+        }
     }
 }

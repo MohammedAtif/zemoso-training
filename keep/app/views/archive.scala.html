@@ -1,6 +1,6 @@
 @(userEmail: String)
 
-@main("Archive") {
+@main("Archive",userEmail) {
   <div ng-app="myAppName1" ng-controller="ArchiveHttpGetController">
 
 
@@ -13,8 +13,8 @@
                           <div class="card" ng-cloak>
                               <input ng-model="id" name="id" ng-value="post.id" type="hidden">
                               <div class="clickd">
-                                  <div name="title" class="title wordWrap" contenteditable="false" ng-cloak>{{ post.title }}</div>
-                                  <div name="content" class="content wordWrap" contenteditable="false" ng-cloak>{{ post.content }}</div>
+                                  <div name="title" class="title wordWrap" contenteditable="false" ng-cloak>{{ post.title.length>15? (post.title|limitTo:15):(post.title)}}<span ng-if="post.title.length>15">...</span></div>
+                                  <div name="content" class="content wordWrap" contenteditable="false" ng-cloak>{{ post.content.length>35? (post.content|limitTo:35):(post.content)}}<span ng-if="post.content.length>35">..</span></div>
                                   <div name="reminder" class="remind" contenteditable="false"><div class="remindText" ng-cloak>{{post.reminder}}</div></div>
                               </div>
                               <div class="toolbar">

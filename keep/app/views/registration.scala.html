@@ -16,27 +16,27 @@
         <div class="formlr col-md-4 col-md-offset-4">
           <div class="formin">
             <div class="form-group">
-              <h1 class="headings">Sign Up</h1>
+              <h1 class="headings fontrobo">Signup</h1>
             </div>
 
                 <div class="formcontent">
                   <div class="form-group">
                     <div class="fill center">
                       <input ng-model="userName" class="inp fill form-control" type="text" placeholder="Name" name="name" required>
-                      <span class="error" ng-show="signupForm.name.$touched && signupForm.name.$invalid">*The name is required.</span>
+                      <span class="error" ng-show="signupForm.name.$touched && signupForm.name.$invalid" ng-cloak>*The name is required.</span>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <div class="fill center">
                       <input ng-model="userEmail" class="inp fill form-control" type="email" name="email" placeholder="Email" required>
-                      <span class="error" ng-show="signupForm.email.$touched && signupForm.email.$invalid">*An email is required!</span>
+                      <span class="error" ng-show="signupForm.email.$touched && signupForm.email.$invalid" ng-cloak>*An email is required!</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="fill center">
                       <input ng-model="userPassword" id="password" placeholder="Password" class="inp fill form-control" pattern=".{5,}" type="password" name="password" required ng-minlength="5">
-                      <span class="error" ng-show="signupForm.password.$error.minlength">*Password too small!</span><br>
+                      <span class="error" ng-show="signupForm.password.$error.minlength" ng-cloak>*Password too small!</span><br>
                     </div>
                   </div>
                   <div class="form-group">
