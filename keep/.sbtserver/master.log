@@ -9950,3 +9950,90 @@ Copy resource mappings:
 Total time: 3 s, completed 1 Nov, 2016 9:10:01 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@759b901c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 1 Nov, 2016 9:32:00 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2fe77536, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 1 Nov, 2016 9:34:14 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@6648cd10, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 1 Nov, 2016 9:37:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
