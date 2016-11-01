@@ -211,6 +211,14 @@ button.close{
     height:50px!important;
     border-radius:5px!important;
 }
+.search1{
+    background-color: black!important;
+    opacity: .1;
+    outline: none;
+    border: 1px solid transparent!important;
+    height:50px!important;
+    border-radius:5px!important;
+}
 .search:focus {
     opacity: 1;
     background-color: white!important;

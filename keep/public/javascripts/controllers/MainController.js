@@ -16,16 +16,7 @@ search.controller("searchHttpGetController",function ($scope,$http) {
                 });
         }
     };
-    $scope.data={};
-    $scope.addDataToModal = function(user,id,title,content,reminder,isActive,isArchive) {
-        //console.log(user,id,title,content);
-        //alert(reminder);
-        $scope.data.user=user;
-        $scope.data.id=id;
-        $scope.data.title=title;
-        $scope.data.content=content;
-        $scope.data.reminder=reminder;
-    };
+
 
     $scope.updateData = function () {
         // use $.param jQuery function to serialize data from JSON
