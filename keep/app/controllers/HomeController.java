@@ -143,7 +143,7 @@ public class HomeController extends Controller {
 
         String reminder=jsonNode.path("reminder").asText();
         String rem=reminder;
-        System.out.println("*************"+reminder+"**************");
+        //System.out.println("*************"+reminder+"**************");
         int isArchive=jsonNode.path("isArchive").asInt();
         int isActive=0;
 
@@ -291,7 +291,7 @@ public class HomeController extends Controller {
             return ok(searchData.render(session().get("email")));
         }
         else{
-            return ok(searchData.render(session().get("email")));
+            return redirect(routes.HomeController.index());
         }
     }
 

@@ -23,6 +23,8 @@ search.controller("searchHttpGetController",function ($scope,$http) {
         $scope.data.title=title;
         $scope.data.content=content;
         $scope.data.reminder=reminder;
+        $scope.data.isArchive=isArchive;
+        alert(isArchive);
     };
 
     $scope.updateData = function () {
@@ -35,7 +37,7 @@ search.controller("searchHttpGetController",function ($scope,$http) {
             title: $scope.data.title,
             content: $scope.data.content,
             reminder:$scope.data.reminder,
-            isArchive:0
+            isArchive:$scope.data.isArchive
         };
 
         $http.post('updatePost', data)
@@ -166,7 +168,9 @@ signup.controller("SignupHttpGetController", function ($scope, $http) {
 
 });
 app.controller("HttpGetController", function ($scope, $http) {
-
+    $scope.blurUpdate = function() {
+        $scope.showRest=false;
+    };
     var posArray={};
     var length;
     $scope.updatePosition=function (oldPos,newPos) {
@@ -638,7 +642,7 @@ app2.controller("ReminderHttpGetController", function ($scope, $http) {
             title: $scope.data.title,
             content: $scope.data.content,
             reminder:$scope.data.reminder,
-            isArchive:1
+            isArchive:$scope.data.isArchive
         };
 
         $http.post('updatePost', data)
@@ -693,6 +697,7 @@ app2.controller("ReminderHttpGetController", function ($scope, $http) {
         $scope.data.title=title;
         $scope.data.content=content;
         $scope.data.reminder=reminder;
+        $scope.data.isArchive=isArchive;
     };
 
     /*$scope.getPosts = function() {

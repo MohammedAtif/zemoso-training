@@ -20750,3 +20750,953 @@ Copy resource mappings:
 Total time: 1 s, completed 2 Nov, 2016 12:04:13 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@53b3426d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 51fac20c, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 0.685022148 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 2 Nov, 2016 12:35:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@38d9b34a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 23ac3a3f, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 1.13721694 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 2 Nov, 2016 12:36:22 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1b7e1da0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 3a2f20c5, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 1.084729746 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 2 Nov, 2016 12:43:58 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@41561da9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 17d1b131, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 1.186657292 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 2 Nov, 2016 12:56:57 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3512e5ef, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala)
+
+Read from stdout: Compiling 2 Scala sources to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 2 Scala sources to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 109284fb, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 1.507291629 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 2 Nov, 2016 12:58:19 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@79133d31, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 360231a2, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 0.992027352 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 2 Nov, 2016 1:55:28 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7588dbe0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala)
+
+Read from stdout: Compiling 4 Scala sources and 1 Java source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 4 Scala sources and 1 Java source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 43c5b2fd, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 5.038571411 s
+Attempting to call com.sun.tools.javac.api.JavacTool@65ca044e directly...
+Java compilation took 1.31805161 s
+Java analysis took 0.124311072 s
+Java compile + analysis took 1.449566489 s
+Invalidating /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java...
+Invalidating (transitively) by inheritance from /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java...
+Initial set of included nodes: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java)
+Invalidated by transitive inheritance dependency: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java)
+The /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java source file has the following regular definitions changed:
+	AsyncController, CountController.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/registration.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java
+None of the modified names appears in /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/zemoso/play/keep/app/controllers/HomeController.java
+None of the modified names appears in /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/index.template.scala. This dependency is not being considered for invalidation.
+Invalidating /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
+Invalidating (transitively) by inheritance from /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
+Initial set of included nodes: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+The /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala source file has the following regular definitions changed:
+	notify, count, _defaultPrefix, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, ReverseCountController, ReverseAsyncController, notifyAll, isInstanceOf, <init>, ==, clone, message, toString, !=, getClass, ne, eq, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/registration.template.scala: Set(<init>, message)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java
+The following modified names cause invalidation of /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala: Set(<init>)
+The following modified names cause invalidation of /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala: Set(<init>)
+The following modified names cause invalidation of /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala: Set(<init>)
+Name hashing optimization doesn't apply to non-Scala dependency: /home/zemoso/play/keep/app/controllers/HomeController.java
+The following modified names cause invalidation of /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/index.template.scala: Set(<init>, message)
+Invalidating /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala...
+Invalidating (transitively) by inheritance from /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala...
+Initial set of included nodes: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala)
+The /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
+	notify, count, _defaultPrefix, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, ReverseCountController, ReverseAsyncController, notifyAll, isInstanceOf, <init>, ==, clone, message, toString, !=, getClass, ne, eq, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/zemoso/play/keep/target/scala-2.11/routes/main/controllers/routes.java
+Invalidating /home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala...
+Invalidating (transitively) by inheritance from /home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala...
+Initial set of included nodes: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala)
+Invalidated by transitive inheritance dependency: Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala)
+The /home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala source file has the following regular definitions changed:
+	controllers_HomeController_regis3_invoker, controllers_HomeController_gArchive15_route, controllers_HomeController_addCards6_invoker, controllers_HomeController_logout18_invoker, controllers_HomeController_updateCards9_invoker, controllers_HomeController_Dash8_route, controllers_HomeController_register6_invoker, controllers_HomeController_updatePositions21_invoker, controllers_HomeController_Dash18_route, controllers_HomeController_gSearch25_route, controllers_HomeController_updatePositions23_route, controllers_HomeController_addCards6_route, controllers_HomeController_copyCards15_route, controllers_HomeController_Dash16_invoker, controllers_HomeController_search24_invoker, controllers_HomeController_del13_invoker, controllers_HomeController_addCards8_route, controllers_HomeController_gSearch23_route, controllers_HomeController_Dash18_invoker, controllers_AsyncController_message3_invoker, controllers_HomeController_Dash10_route, controllers_HomeController_register4_route, controllers_HomeController_getPosts9_invoker, controllers_HomeController_del11_invoker, controllers_HomeController_Dash5_route, controllers_HomeController_regis3_route, controllers_HomeController_regis5_route, controllers_HomeController_getPostsAll10_route, controllers_HomeController_gArchive15_invoker, controllers_HomeController_updatePositions21_route, controllers_HomeController_search24_route, controllers_HomeController_logout20_route, controllers_HomeController_gSearch23_invoker, controllers_HomeController_getPostsAll12_invoker, controllers_Assets_versioned2_route, controllers_HomeController_gReminder19_route, controllers_HomeController_Dash7_route, controllers_HomeController_getPostsAll10_invoker, controllers_HomeController_regis5_invoker, controllers_HomeController_getArchive14_route, controllers_AsyncController_message3_route, controllers_HomeController_Dash10_invoker, controllers_HomeController_Dash16_route, controllers_HomeController_logout20_invoker, controllers_CountController_count2_route, controllers_HomeController_getArchive16_invoker, controllers_HomeController_getReminder22_invoker, controllers_HomeController_archive14_route, controllers_HomeController_archive12_invoker, controllers_HomeController_search22_route, controllers_HomeController_del11_route, controllers_HomeController_getReminder22_route, controllers_HomeController_copyCards17_invoker, controllers_HomeController_Dash5_invoker, controllers_HomeController_getPosts9_route, controllers_CountController_count2_invoker, <init>, controllers_HomeController_Dash8_invoker, controllers_HomeController_updateCards9_route, controllers_HomeController_addCards8_invoker, controllers_HomeController_updateCards7_invoker, controllers_HomeController_copyCards15_invoker, controllers_HomeController_getArchive14_invoker, controllers_HomeController_getPosts11_invoker, controllers_HomeController_copyCards17_route, controllers_HomeController_search22_invoker, controllers_HomeController_del13_route, controllers_HomeController_gArchive13_invoker, controllers_HomeController_getReminder20_invoker, controllers_HomeController_register6_route, controllers_HomeController_gReminder21_invoker, controllers_HomeController_getPosts11_route, controllers_HomeController_getArchive16_route, controllers_HomeController_Dash7_invoker, controllers_HomeController_updateCards7_route, controllers_HomeController_gReminder21_route, controllers_Assets_versioned4_route, controllers_HomeController_archive12_route, controllers_HomeController_getPostsAll12_route, controllers_HomeController_updateReminder17_invoker, controllers_Assets_versioned4_invoker, controllers_HomeController_updateReminder17_route, controllers_HomeController_updateReminder19_route, controllers_HomeController_updateReminder19_invoker, controllers_HomeController_gReminder19_invoker, controllers_HomeController_gSearch25_invoker, controllers_HomeController_updatePositions23_invoker, controllers_HomeController_logout18_route, controllers_HomeController_gArchive13_route, controllers_HomeController_register4_invoker, controllers_HomeController_archive14_invoker, controllers_HomeController_getReminder20_route, controllers_Assets_versioned2_invoker.
+All member reference dependencies will be considered within this context.
+New invalidations:
+	Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/registration.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala, /home/zemoso/play/keep/app/controllers/HomeController.java, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/index.template.scala)
+Initial set of included nodes: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/registration.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala, /home/zemoso/play/keep/app/controllers/HomeController.java, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/index.template.scala)
+Including /home/zemoso/play/keep/app/controllers/HomeController.java by /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/registration.template.scala
+Including /home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala by /home/zemoso/play/keep/app/controllers/HomeController.java
+Including /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/dash.template.scala by /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/reminder.template.scala by /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/archive.template.scala by /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/index.template.scala by /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala
+Including /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala by /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/home/zemoso/play/keep/target/scala-2.11/routes/main/router/Routes.scala)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/registration.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/main.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/temp.template.scala, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/search.template.scala, /home/zemoso/play/keep/app/controllers/HomeController.java, /home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/index.template.scala)
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 63435684, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 3.615967363 s
+Attempting to call com.sun.tools.javac.api.JavacTool@65ca044e directly...
+Read from stdout: /home/zemoso/play/keep/app/controllers/HomeController.java: /home/zemoso/play/keep/app/controllers/HomeController.java uses or overrides a deprecated API.
+/home/zemoso/play/keep/app/controllers/HomeController.java: /home/zemoso/play/keep/app/controllers/HomeController.java uses or overrides a deprecated API.
+Read from stdout: /home/zemoso/play/keep/app/controllers/HomeController.java: Recompile with -Xlint:deprecation for details.
+/home/zemoso/play/keep/app/controllers/HomeController.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.686913393 s
+Java analysis took 0.249387337 s
+Java compile + analysis took 0.939335486 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 13 s, completed 2 Nov, 2016 2:12:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3b085395, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 6fdb4441, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 6.817345131 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 7 s, completed 2 Nov, 2016 2:34:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5be71ef4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 2 Nov, 2016 2:35:48 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@29ed06c5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 4b413b9f, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 1.480808211 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 2 Nov, 2016 2:38:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5473167d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 2 Nov, 2016 2:39:13 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@9e87d29, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/app/controllers/HomeController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/app/controllers/HomeController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/app/controllers/HomeController.java)
+
+Read from stdout: Compiling 1 Java source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Java source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@66587435 directly...
+Read from stdout: /home/zemoso/play/keep/app/controllers/HomeController.java: /home/zemoso/play/keep/app/controllers/HomeController.java uses or overrides a deprecated API.
+/home/zemoso/play/keep/app/controllers/HomeController.java: /home/zemoso/play/keep/app/controllers/HomeController.java uses or overrides a deprecated API.
+Read from stdout: /home/zemoso/play/keep/app/controllers/HomeController.java: Recompile with -Xlint:deprecation for details.
+/home/zemoso/play/keep/app/controllers/HomeController.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.621334142 s
+Java analysis took 0.189115186 s
+Java compile + analysis took 0.818573256 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 2 Nov, 2016 2:41:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@68cc1383, check cycles: false
+Total time: 0 s, completed 2 Nov, 2016 2:41:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@700b1e76, check cycles: false
+Total time: 0 s, completed 2 Nov, 2016 2:41:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@4b2b52b9, check cycles: false
+Total time: 0 s, completed 2 Nov, 2016 2:41:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@679a77dd, check cycles: false
+Total time: 0 s, completed 2 Nov, 2016 2:41:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@54862ff3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 2 Nov, 2016 2:41:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@42ab20d6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 2 Nov, 2016 2:44:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c2c7eb4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/searchData.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 4ccbba36, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 1.429097359 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 2 Nov, 2016 2:46:25 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2a48f23c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/reminder.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/reminder.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/target/scala-2.11/twirl/main/views/html/reminder.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 41f29388, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/zemoso/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/home/zemoso/play/keep/target/scala-2.11/classes:/home/zemoso/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/home/zemoso/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/zemoso/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.4.jar:/home/zemoso/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.8.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.7.6.jar:/home/zemoso/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.7.6.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.5.9.jar:/home/zemoso/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.21.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-streams_2.11/jars/play-streams_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.7.0.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/bundles/ssl-config-akka_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/com.typesafe/ssl-config-core_2.11/bundles/ssl-config-core_2.11-0.2.1.jar:/home/zemoso/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/home/zemoso/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.4.10.jar:/home/zemoso/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/home/zemoso/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/zemoso/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/zemoso/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/zemoso/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/home/zemoso/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/home/zemoso/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/home/zemoso/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/home/zemoso/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/zemoso/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/zemoso/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar:/home/zemoso/.ivy2/cache/com.h2database/h2/jars/h2-1.4.192.jar:/home/zemoso/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar:/home/zemoso/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar:/home/zemoso/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/zemoso/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/home/zemoso/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.1.0.jar:/home/zemoso/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-3.0.0.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.2.7.RELEASE.jar:/home/zemoso/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar:/home/zemoso/.ivy2/cache/com.google.guava/guava/bundles/guava-19.0.jar:/home/zemoso/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar:/home/zemoso/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar:/home/zemoso/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar:/home/zemoso/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar:/home/zemoso/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar:/home/zemoso/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.8.jar:/home/zemoso/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.8.jar:/home/zemoso/.ivy2/cache/io.netty/netty-handler/jars/netty-handler-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-buffer/jars/netty-buffer-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-common/jars/netty-common-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport/jars/netty-transport-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.41.Final.jar:/home/zemoso/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.41.Final-linux-x86_64.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar:/home/zemoso/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.5.9.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.11.jar:/home/zemoso/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.11.jar:/home/zemoso/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/zemoso/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/home/zemoso/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/home/zemoso/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/zemoso/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/zemoso/.ivy2/cache/org.json/json/jars/json-20131018.jar:/home/zemoso/.ivy2/cache/com.google.code.gson/gson/jars/gson-1.7.2.jar:/home/zemoso/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar
+Scala compilation took 1.272107852 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 2 Nov, 2016 2:49:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6a1b327c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/zemoso/play/keep/app/controllers/HomeController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/zemoso/play/keep/app/controllers/HomeController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/zemoso/play/keep/app/controllers/HomeController.java)
+
+Read from stdout: Compiling 1 Java source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Compiling 1 Java source to /home/zemoso/play/keep/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3c35aee7 directly...
+Read from stdout: /home/zemoso/play/keep/app/controllers/HomeController.java: /home/zemoso/play/keep/app/controllers/HomeController.java uses or overrides a deprecated API.
+/home/zemoso/play/keep/app/controllers/HomeController.java: /home/zemoso/play/keep/app/controllers/HomeController.java uses or overrides a deprecated API.
+Read from stdout: /home/zemoso/play/keep/app/controllers/HomeController.java: Recompile with -Xlint:deprecation for details.
+/home/zemoso/play/keep/app/controllers/HomeController.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.32021009 s
+Java analysis took 0.188592781 s
+Java compile + analysis took 0.539221236 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 2 Nov, 2016 3:12:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 2
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@3627cf3a, check cycles: false
+Total time: 0 s, completed 2 Nov, 2016 3:12:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@3e5228df, check cycles: false
+Total time: 0 s, completed 2 Nov, 2016 3:12:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@5b8b7e29, check cycles: false
+Total time: 0 s, completed 2 Nov, 2016 3:12:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@410e4882, check cycles: false
+Total time: 0 s, completed 2 Nov, 2016 3:12:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/zemoso/play/keep/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7b96b1fe, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/zemoso/play/keep/conf/evolutions,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions)
+	(/home/zemoso/play/keep/conf/routes,/home/zemoso/play/keep/target/scala-2.11/classes/routes)
+	(/home/zemoso/play/keep/conf/application.conf,/home/zemoso/play/keep/target/scala-2.11/classes/application.conf)
+	(/home/zemoso/play/keep/conf/logback.xml,/home/zemoso/play/keep/target/scala-2.11/classes/logback.xml)
+	(/home/zemoso/play/keep/conf/evolutions/default,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default)
+	(/home/zemoso/play/keep/conf/evolutions/default/1.sql,/home/zemoso/play/keep/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 2 Nov, 2016 3:12:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

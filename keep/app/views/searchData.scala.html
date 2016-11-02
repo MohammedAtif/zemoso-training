@@ -7,7 +7,7 @@
     <div id="items" class="no-padding col-md-10 col-md-offset-2">
 
       <div ng-repeat="post in filteredItems  = ( posts | filter:search )">
-        <div class="col-md-3 eachCard" ng-click="addDataToModal(post.user,post.id,post.title,post.content,post.reminder,0,0)">
+        <div class="col-md-3 eachCard" ng-click="addDataToModal(post.user,post.id,post.title,post.content,post.reminder,0,post.isArchive)">
           <div class="card" ng-clock>
             <input ng-model="id" name="id" ng-value="post.id" type="hidden">
             <div class="clickd">
@@ -44,6 +44,7 @@
 
                     <input data-ng-model="data.user" type="hidden">
                     <input data-ng-model="data.id" type="hidden">
+                    <input data-ng-model="data.isArchive" type="hidden">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <div id="titleDiv" class="title" ><input data-ng-model="data.title" class="textDivInp" placeholder="Title" name="title" type="text"></div>
                     <div id="contentDiv" class="content">
