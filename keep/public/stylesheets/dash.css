@@ -251,3 +251,8 @@ a :hover{
 .fa :hover{
     cursor: pointer!important; cursor: hand!important;
 }
+.searchError{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    opacity: .2;
+}

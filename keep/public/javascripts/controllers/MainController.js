@@ -1,6 +1,4 @@
 search.controller("searchHttpGetController",function ($scope,$http) {
-    $scope.query = {};
-    $scope.queryBy = '$';
     var posArray={};
     var length;
     var x;
@@ -119,6 +117,10 @@ search.controller("searchHttpGetController",function ($scope,$http) {
             });
     };
     $scope.getPosts();
+    $scope.search = function (row) {
+        return (angular.lowercase(row.title).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
+        angular.lowercase(row.content).indexOf(angular.lowercase($scope.query) || '') !== -1);
+    };
 });
 login.controller("loginHttpGetController", function ($scope, $http, $location) {
     $scope.login = function() {
