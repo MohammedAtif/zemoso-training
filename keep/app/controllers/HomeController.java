@@ -214,35 +214,37 @@ public class HomeController extends Controller {
         wrapper.put(type, msg);
         return wrapper;
     }
-
+    @Security.Authenticated(Secured.class)
     public Result Dash(){
-        List<Card> card= Card.getData(session().get("email"));
-        if(!(session().get("email")==null)){
+//        List<Card> card= Card.getData(session().get("email"));
+//        if(!(session().get("email")==null)){
         return ok(dash.render(session().get("email")));
-        }
-        else{
-            return redirect(routes.HomeController.index());
-        }
+//        }
+//        else{
+//            return redirect(routes.HomeController.index());
+//        }
     }
+    @Security.Authenticated(Secured.class)
     public Result gArchive(){
-        if(!(session().get("email")==null)){
-            return ok(archive.render(session().get("email")));
-        }
-        else{
+//        if(!(session().get("email")==null)){
+//            return ok(archive.render(session().get("email")));
+//        }
+//        else{
             return redirect(routes.HomeController.index());
-        }
+//        }
     }
     public Result getArchive(){
         List<Card> card= Card.getArchive(session().get("email"));
         return ok(Json.toJson(card));
     }
+    @Security.Authenticated(Secured.class)
     public Result gReminder(){
-        if(!(session().get("email")==null)){
+//        if(!(session().get("email")==null)){
             return ok(reminder.render(session().get("email")));
-        }
-        else{
-            return redirect(routes.HomeController.index());
-        }
+//        }
+//        else{
+//            return redirect(routes.HomeController.index());
+//        }
     }
     public Result getReminder(){
         List<Card> card = Card.getReminder(session().get("email"));
@@ -286,21 +288,23 @@ public class HomeController extends Controller {
         flash("success", "You've been logged out");
         return redirect(routes.HomeController.index());
     }
+    @Security.Authenticated(Secured.class)
     public Result search(){
-        if(!(session().get("email")==null)){
+//        if(!(session().get("email")==null)){
             return ok(searchData.render(session().get("email")));
-        }
-        else{
-            return redirect(routes.HomeController.index());
-        }
+//        }
+//        else{
+//            return redirect(routes.HomeController.index());
+//        }
     }
-
+    @Security.Authenticated(Secured.class)
     public Result gSearch(){
-        if(!(session().get("email")==null)){
+//        if(!(session().get("email")==null)){
             return ok(searchData.render(session().get("email")));
-        }
-        else{
-            return redirect(routes.HomeController.index());
-        }
+//        }
+//        else{
+//            return redirect(routes.HomeController.index());
+
+//        }
     }
 }

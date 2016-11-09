@@ -24,7 +24,7 @@ search.controller("searchHttpGetController",function ($scope,$http) {
         $scope.data.content=content;
         $scope.data.reminder=reminder;
         $scope.data.isArchive=isArchive;
-        alert(isArchive);
+        //alert(isArchive);
     };
 
     $scope.updateData = function () {
