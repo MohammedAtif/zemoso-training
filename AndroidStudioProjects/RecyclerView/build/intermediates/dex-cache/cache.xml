@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_c4e87676ecf285fc8763133ab0fd214f8a345e6e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.0.0_32807fa0d3510eb59610a19f040b259a913426c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/support-annotations-24.1.1_5731884fccc3a397612fbe363112de3cb237c168.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.1.1_af7588df2cc9c701f67e5bb0e1224598a3af960d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.1.1_7caaf52975c05264a3421d338fdb02d240f3862d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.1.1_46de492938aadb5f5d1bdc2544603d1a6e486565.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.1.1_a65c158a68e8fddd48ca9c6b52e24aab47a4483a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="85d1f3e7a5081e06214146ff6150087766025def">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/instant-run-bootstrap_ff8383df5f86e4b972bbd4a761880ee21645f935.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8a5380ddd58f4f8946ddade4c64dd77de4a836d5">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/com.android.support-gridlayout-v7-24.1.1_dec8c54839b0a63fcac97a960b1eca7f4138d165.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7da144b5e23f021f4c52ed016f0aecb467b276c5">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/instant-run_bfc274dbc34e1a54c6a0f64bc3431625986a1fab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.1.1_f1a30ecf85812fcb1fa2dad928adfa35f2c221e2.jar" />
+    </item>
+
+</items>

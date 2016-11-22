@@ -1,0 +1,1803 @@
+[
+    {
+        "outputFile": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/src/main/res/values-v21/base-colors.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 8,
+                        "startOffset": 652,
+                        "endColumn": 50,
+                        "endOffset": 694
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 50,
+                    "endOffset": 148
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/src/main/res/values-v21/base-colors.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 8,
+                        "startOffset": 703,
+                        "endColumn": 54,
+                        "endOffset": 749
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 153,
+                    "endColumn": 90,
+                    "endOffset": 239
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 90,
+                        "endOffset": 141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 244,
+                    "endColumn": 102,
+                    "endOffset": 342
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 146,
+                        "endColumn": 102,
+                        "endOffset": 244
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 347,
+                    "endColumn": 102,
+                    "endOffset": 445
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 249,
+                        "endColumn": 102,
+                        "endOffset": 347
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 450,
+                    "endColumn": 104,
+                    "endOffset": 550
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 352,
+                        "endColumn": 104,
+                        "endOffset": 452
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 555,
+                    "endColumn": 106,
+                    "endOffset": 657
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 457,
+                        "endColumn": 106,
+                        "endOffset": 559
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 662,
+                    "endColumn": 108,
+                    "endOffset": 766
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 564,
+                        "endColumn": 108,
+                        "endOffset": 668
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 771,
+                    "endColumn": 108,
+                    "endOffset": 875
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 673,
+                        "endColumn": 108,
+                        "endOffset": 777
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 880,
+                    "endColumn": 108,
+                    "endOffset": 984
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 782,
+                        "endColumn": 108,
+                        "endOffset": 886
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 989,
+                    "endColumn": 108,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 891,
+                        "endColumn": 108,
+                        "endOffset": 995
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1098,
+                    "endColumn": 108,
+                    "endOffset": 1202
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1000,
+                        "endColumn": 108,
+                        "endOffset": 1104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1207,
+                    "endColumn": 106,
+                    "endOffset": 1309
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1109,
+                        "endColumn": 106,
+                        "endOffset": 1211
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1314,
+                    "endColumn": 102,
+                    "endOffset": 1412
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1216,
+                        "endColumn": 102,
+                        "endOffset": 1314
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1417,
+                    "endColumn": 118,
+                    "endOffset": 1531
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1319,
+                        "endColumn": 118,
+                        "endOffset": 1433
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1536,
+                    "endLine": 18,
+                    "endColumn": 12,
+                    "endOffset": 1686
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1438,
+                        "endLine": 16,
+                        "endColumn": 12,
+                        "endOffset": 1588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1691,
+                    "endLine": 20,
+                    "endColumn": 12,
+                    "endOffset": 1841
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1593,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1743
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1846,
+                    "endColumn": 104,
+                    "endOffset": 1946
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1748,
+                        "endColumn": 104,
+                        "endOffset": 1848
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1951,
+                    "endColumn": 120,
+                    "endOffset": 2067
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1853,
+                        "endColumn": 120,
+                        "endOffset": 1969
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2072,
+                    "endColumn": 100,
+                    "endOffset": 2168
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1974,
+                        "endColumn": 100,
+                        "endOffset": 2070
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2173,
+                    "endLine": 25,
+                    "endColumn": 12,
+                    "endOffset": 2315
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2075,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 2217
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2320,
+                    "endLine": 27,
+                    "endColumn": 12,
+                    "endOffset": 2456
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 2222,
+                        "endLine": 25,
+                        "endColumn": 12,
+                        "endOffset": 2358
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2461,
+                    "endColumn": 102,
+                    "endOffset": 2559
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 2363,
+                        "endColumn": 102,
+                        "endOffset": 2461
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2564,
+                    "endColumn": 118,
+                    "endOffset": 2678
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 2466,
+                        "endColumn": 118,
+                        "endOffset": 2580
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2683,
+                    "endColumn": 106,
+                    "endOffset": 2785
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 2585,
+                        "endColumn": 106,
+                        "endOffset": 2687
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2790,
+                    "endColumn": 102,
+                    "endOffset": 2888
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2692,
+                        "endColumn": 102,
+                        "endOffset": 2790
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2893,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 3043
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 2795,
+                        "endLine": 31,
+                        "endColumn": 12,
+                        "endOffset": 2945
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 3048,
+                    "endLine": 35,
+                    "endColumn": 12,
+                    "endOffset": 3214
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 2950,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 3116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3219,
+                    "endLine": 37,
+                    "endColumn": 12,
+                    "endOffset": 3363
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 3121,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 3265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3368,
+                    "endLine": 39,
+                    "endColumn": 12,
+                    "endOffset": 3528
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 3270,
+                        "endLine": 37,
+                        "endColumn": 12,
+                        "endOffset": 3430
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3533,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 3685
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 3435,
+                        "endLine": 39,
+                        "endColumn": 12,
+                        "endOffset": 3587
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3690,
+                    "endLine": 43,
+                    "endColumn": 12,
+                    "endOffset": 3836
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 3592,
+                        "endLine": 41,
+                        "endColumn": 12,
+                        "endOffset": 3738
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3841,
+                    "endColumn": 118,
+                    "endOffset": 3955
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 3743,
+                        "endColumn": 118,
+                        "endOffset": 3857
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 3960,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 4327
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 3862,
+                        "endLine": 47,
+                        "endColumn": 12,
+                        "endOffset": 4229
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 4332,
+                    "endLine": 51,
+                    "endColumn": 12,
+                    "endOffset": 4476
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 4234,
+                        "endLine": 49,
+                        "endColumn": 12,
+                        "endOffset": 4378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 4481,
+                    "endLine": 53,
+                    "endColumn": 12,
+                    "endOffset": 4625
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 4383,
+                        "endLine": 51,
+                        "endColumn": 12,
+                        "endOffset": 4527
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 4630,
+                    "endColumn": 111,
+                    "endOffset": 4737
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 4532,
+                        "endColumn": 111,
+                        "endOffset": 4639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 4742,
+                    "endColumn": 146,
+                    "endOffset": 4884
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 4644,
+                        "endColumn": 146,
+                        "endOffset": 4786
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 4889,
+                    "endLine": 57,
+                    "endColumn": 12,
+                    "endOffset": 5037
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 4791,
+                        "endLine": 55,
+                        "endColumn": 12,
+                        "endOffset": 4939
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 5042,
+                    "endLine": 59,
+                    "endColumn": 12,
+                    "endOffset": 5184
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 4944,
+                        "endLine": 57,
+                        "endColumn": 12,
+                        "endOffset": 5086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 5189,
+                    "endColumn": 74,
+                    "endOffset": 5259
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 5091,
+                        "endColumn": 74,
+                        "endOffset": 5161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 5264,
+                    "endColumn": 88,
+                    "endOffset": 5348
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 5166,
+                        "endColumn": 88,
+                        "endOffset": 5250
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 5353,
+                    "endColumn": 86,
+                    "endOffset": 5435
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 4,
+                        "startOffset": 5255,
+                        "endColumn": 86,
+                        "endOffset": 5337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 5440,
+                    "endColumn": 100,
+                    "endOffset": 5536
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 5342,
+                        "endColumn": 100,
+                        "endOffset": 5438
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 5541,
+                    "endColumn": 102,
+                    "endOffset": 5639
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 5443,
+                        "endColumn": 102,
+                        "endOffset": 5541
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 5644,
+                    "endLine": 108,
+                    "endColumn": 12,
+                    "endOffset": 8707
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 5546,
+                        "endLine": 106,
+                        "endColumn": 12,
+                        "endOffset": 8609
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 8712,
+                    "endLine": 111,
+                    "endColumn": 12,
+                    "endOffset": 8893
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 4,
+                        "startOffset": 8614,
+                        "endLine": 109,
+                        "endColumn": 12,
+                        "endOffset": 8795
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 8898,
+                    "endLine": 155,
+                    "endColumn": 12,
+                    "endOffset": 11973
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 8800,
+                        "endLine": 153,
+                        "endColumn": 12,
+                        "endOffset": 11875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 11978,
+                    "endLine": 158,
+                    "endColumn": 12,
+                    "endOffset": 12171
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 154,
+                        "startColumn": 4,
+                        "startOffset": 11880,
+                        "endLine": 156,
+                        "endColumn": 12,
+                        "endOffset": 12073
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 12176,
+                    "endLine": 161,
+                    "endColumn": 12,
+                    "endOffset": 12371
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 12078,
+                        "endLine": 159,
+                        "endColumn": 12,
+                        "endOffset": 12273
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 162,
+                    "startColumn": 4,
+                    "startOffset": 12376,
+                    "endLine": 163,
+                    "endColumn": 12,
+                    "endOffset": 12494
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 160,
+                        "startColumn": 4,
+                        "startOffset": 12278,
+                        "endLine": 161,
+                        "endColumn": 12,
+                        "endOffset": 12396
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 12499,
+                    "endLine": 165,
+                    "endColumn": 12,
+                    "endOffset": 12617
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 162,
+                        "startColumn": 4,
+                        "startOffset": 12401,
+                        "endLine": 163,
+                        "endColumn": 12,
+                        "endOffset": 12519
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 166,
+                    "startColumn": 4,
+                    "startOffset": 12622,
+                    "endLine": 167,
+                    "endColumn": 12,
+                    "endOffset": 12730
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 164,
+                        "startColumn": 4,
+                        "startOffset": 12524,
+                        "endLine": 165,
+                        "endColumn": 12,
+                        "endOffset": 12632
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 168,
+                    "startColumn": 4,
+                    "startOffset": 12735,
+                    "endLine": 170,
+                    "endColumn": 12,
+                    "endOffset": 12913
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 166,
+                        "startColumn": 4,
+                        "startOffset": 12637,
+                        "endLine": 168,
+                        "endColumn": 12,
+                        "endOffset": 12815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 171,
+                    "startColumn": 4,
+                    "startOffset": 12918,
+                    "endLine": 172,
+                    "endColumn": 12,
+                    "endOffset": 13044
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 169,
+                        "startColumn": 4,
+                        "startOffset": 12820,
+                        "endLine": 170,
+                        "endColumn": 12,
+                        "endOffset": 12946
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 173,
+                    "startColumn": 4,
+                    "startOffset": 13049,
+                    "endLine": 175,
+                    "endColumn": 12,
+                    "endOffset": 13245
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 171,
+                        "startColumn": 4,
+                        "startOffset": 12951,
+                        "endLine": 173,
+                        "endColumn": 12,
+                        "endOffset": 13147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 176,
+                    "startColumn": 4,
+                    "startOffset": 13250,
+                    "endColumn": 88,
+                    "endOffset": 13334
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 174,
+                        "startColumn": 4,
+                        "startOffset": 13152,
+                        "endColumn": 88,
+                        "endOffset": 13236
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 177,
+                    "startColumn": 4,
+                    "startOffset": 13339,
+                    "endColumn": 110,
+                    "endOffset": 13445
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 175,
+                        "startColumn": 4,
+                        "startOffset": 13241,
+                        "endColumn": 110,
+                        "endOffset": 13347
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 178,
+                    "startColumn": 4,
+                    "startOffset": 13450,
+                    "endLine": 180,
+                    "endColumn": 12,
+                    "endOffset": 13678
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 176,
+                        "startColumn": 4,
+                        "startOffset": 13352,
+                        "endLine": 178,
+                        "endColumn": 12,
+                        "endOffset": 13580
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 181,
+                    "startColumn": 4,
+                    "startOffset": 13683,
+                    "endColumn": 100,
+                    "endOffset": 13779
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 179,
+                        "startColumn": 4,
+                        "startOffset": 13585,
+                        "endColumn": 100,
+                        "endOffset": 13681
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 13784,
+                    "endColumn": 94,
+                    "endOffset": 13874
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 180,
+                        "startColumn": 4,
+                        "startOffset": 13686,
+                        "endColumn": 94,
+                        "endOffset": 13776
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 183,
+                    "startColumn": 4,
+                    "startOffset": 13879,
+                    "endColumn": 122,
+                    "endOffset": 13997
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 181,
+                        "startColumn": 4,
+                        "startOffset": 13781,
+                        "endColumn": 122,
+                        "endOffset": 13899
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 184,
+                    "startColumn": 4,
+                    "startOffset": 14002,
+                    "endColumn": 128,
+                    "endOffset": 14126
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 182,
+                        "startColumn": 4,
+                        "startOffset": 13904,
+                        "endColumn": 128,
+                        "endOffset": 14028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 185,
+                    "startColumn": 4,
+                    "startOffset": 14131,
+                    "endColumn": 116,
+                    "endOffset": 14243
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 183,
+                        "startColumn": 4,
+                        "startOffset": 14033,
+                        "endColumn": 116,
+                        "endOffset": 14145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 186,
+                    "startColumn": 4,
+                    "startOffset": 14248,
+                    "endLine": 188,
+                    "endColumn": 12,
+                    "endOffset": 14420
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 184,
+                        "startColumn": 4,
+                        "startOffset": 14150,
+                        "endLine": 186,
+                        "endColumn": 12,
+                        "endOffset": 14322
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 189,
+                    "startColumn": 4,
+                    "startOffset": 14425,
+                    "endColumn": 98,
+                    "endOffset": 14519
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 187,
+                        "startColumn": 4,
+                        "startOffset": 14327,
+                        "endColumn": 98,
+                        "endOffset": 14421
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 190,
+                    "startColumn": 4,
+                    "startOffset": 14524,
+                    "endLine": 191,
+                    "endColumn": 12,
+                    "endOffset": 14654
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 188,
+                        "startColumn": 4,
+                        "startOffset": 14426,
+                        "endLine": 189,
+                        "endColumn": 12,
+                        "endOffset": 14556
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 192,
+                    "startColumn": 4,
+                    "startOffset": 14659,
+                    "endLine": 193,
+                    "endColumn": 12,
+                    "endOffset": 14797
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 190,
+                        "startColumn": 4,
+                        "startOffset": 14561,
+                        "endLine": 191,
+                        "endColumn": 12,
+                        "endOffset": 14699
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 194,
+                    "startColumn": 4,
+                    "startOffset": 14802,
+                    "endLine": 195,
+                    "endColumn": 12,
+                    "endOffset": 14932
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 192,
+                        "startColumn": 4,
+                        "startOffset": 14704,
+                        "endLine": 193,
+                        "endColumn": 12,
+                        "endOffset": 14834
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 196,
+                    "startColumn": 4,
+                    "startOffset": 14937,
+                    "endLine": 197,
+                    "endColumn": 12,
+                    "endOffset": 15051
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 194,
+                        "startColumn": 4,
+                        "startOffset": 14839,
+                        "endLine": 195,
+                        "endColumn": 12,
+                        "endOffset": 14953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 198,
+                    "startColumn": 4,
+                    "startOffset": 15056,
+                    "endLine": 201,
+                    "endColumn": 12,
+                    "endOffset": 15252
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 196,
+                        "startColumn": 4,
+                        "startOffset": 14958,
+                        "endLine": 199,
+                        "endColumn": 12,
+                        "endOffset": 15154
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 202,
+                    "startColumn": 4,
+                    "startOffset": 15257,
+                    "endLine": 203,
+                    "endColumn": 12,
+                    "endOffset": 15371
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 200,
+                        "startColumn": 4,
+                        "startOffset": 15159,
+                        "endLine": 201,
+                        "endColumn": 12,
+                        "endOffset": 15273
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 204,
+                    "startColumn": 4,
+                    "startOffset": 15376,
+                    "endColumn": 92,
+                    "endOffset": 15464
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 202,
+                        "startColumn": 4,
+                        "startOffset": 15278,
+                        "endColumn": 92,
+                        "endOffset": 15366
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 205,
+                    "startColumn": 4,
+                    "startOffset": 15469,
+                    "endColumn": 110,
+                    "endOffset": 15575
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 203,
+                        "startColumn": 4,
+                        "startOffset": 15371,
+                        "endColumn": 110,
+                        "endOffset": 15477
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 206,
+                    "startColumn": 4,
+                    "startOffset": 15580,
+                    "endColumn": 55,
+                    "endOffset": 15631
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 204,
+                        "startColumn": 4,
+                        "startOffset": 15482,
+                        "endColumn": 55,
+                        "endOffset": 15533
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 207,
+                    "startColumn": 4,
+                    "startOffset": 15636,
+                    "endLine": 208,
+                    "endColumn": 12,
+                    "endOffset": 15738
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 205,
+                        "startColumn": 4,
+                        "startOffset": 15538,
+                        "endLine": 206,
+                        "endColumn": 12,
+                        "endOffset": 15640
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 209,
+                    "startColumn": 4,
+                    "startOffset": 15743,
+                    "endLine": 212,
+                    "endColumn": 12,
+                    "endOffset": 15933
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 207,
+                        "startColumn": 4,
+                        "startOffset": 15645,
+                        "endLine": 210,
+                        "endColumn": 12,
+                        "endOffset": 15835
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 213,
+                    "startColumn": 4,
+                    "startOffset": 15938,
+                    "endLine": 214,
+                    "endColumn": 12,
+                    "endOffset": 16044
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 211,
+                        "startColumn": 4,
+                        "startOffset": 15840,
+                        "endLine": 212,
+                        "endColumn": 12,
+                        "endOffset": 15946
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 215,
+                    "startColumn": 4,
+                    "startOffset": 16049,
+                    "endLine": 216,
+                    "endColumn": 12,
+                    "endOffset": 16177
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 213,
+                        "startColumn": 4,
+                        "startOffset": 15951,
+                        "endLine": 214,
+                        "endColumn": 12,
+                        "endOffset": 16079
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 217,
+                    "startColumn": 4,
+                    "startOffset": 16182,
+                    "endColumn": 94,
+                    "endOffset": 16272
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 215,
+                        "startColumn": 4,
+                        "startOffset": 16084,
+                        "endColumn": 94,
+                        "endOffset": 16174
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 218,
+                    "startColumn": 4,
+                    "startOffset": 16277,
+                    "endColumn": 90,
+                    "endOffset": 16363
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 216,
+                        "startColumn": 4,
+                        "startOffset": 16179,
+                        "endColumn": 90,
+                        "endOffset": 16265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 219,
+                    "startColumn": 4,
+                    "startOffset": 16368,
+                    "endColumn": 90,
+                    "endOffset": 16454
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 217,
+                        "startColumn": 4,
+                        "startOffset": 16270,
+                        "endColumn": 90,
+                        "endOffset": 16356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 220,
+                    "startColumn": 4,
+                    "startOffset": 16459,
+                    "endColumn": 116,
+                    "endOffset": 16571
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 218,
+                        "startColumn": 4,
+                        "startOffset": 16361,
+                        "endColumn": 116,
+                        "endOffset": 16473
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 221,
+                    "startColumn": 4,
+                    "startOffset": 16576,
+                    "endLine": 222,
+                    "endColumn": 12,
+                    "endOffset": 16710
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 219,
+                        "startColumn": 4,
+                        "startOffset": 16478,
+                        "endLine": 220,
+                        "endColumn": 12,
+                        "endOffset": 16612
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 223,
+                    "startColumn": 4,
+                    "startOffset": 16715,
+                    "endLine": 232,
+                    "endColumn": 12,
+                    "endOffset": 17223
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 221,
+                        "startColumn": 4,
+                        "startOffset": 16617,
+                        "endLine": 230,
+                        "endColumn": 12,
+                        "endOffset": 17125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 233,
+                    "startColumn": 4,
+                    "startOffset": 17228,
+                    "endLine": 242,
+                    "endColumn": 12,
+                    "endOffset": 17748
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 231,
+                        "startColumn": 4,
+                        "startOffset": 17130,
+                        "endLine": 240,
+                        "endColumn": 12,
+                        "endOffset": 17650
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 243,
+                    "startColumn": 4,
+                    "startOffset": 17753,
+                    "endLine": 252,
+                    "endColumn": 12,
+                    "endOffset": 18428
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 241,
+                        "startColumn": 4,
+                        "startOffset": 17655,
+                        "endLine": 250,
+                        "endColumn": 12,
+                        "endOffset": 18330
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 253,
+                    "startColumn": 4,
+                    "startOffset": 18433,
+                    "endColumn": 56,
+                    "endOffset": 18485
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 251,
+                        "startColumn": 4,
+                        "startOffset": 18335,
+                        "endColumn": 56,
+                        "endOffset": 18387
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 254,
+                    "startColumn": 4,
+                    "startOffset": 18490,
+                    "endColumn": 57,
+                    "endOffset": 18543
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 252,
+                        "startColumn": 4,
+                        "startOffset": 18392,
+                        "endColumn": 57,
+                        "endOffset": 18445
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 255,
+                    "startColumn": 4,
+                    "startOffset": 18548,
+                    "endLine": 258,
+                    "endColumn": 12,
+                    "endOffset": 18778
+                },
+                "from": {
+                    "file": "/home/zemoso/AndroidStudioProjects/RecyclerView/Application/src/main/res/values-v21/base-template-styles.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 677,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 907
+                    }
+                }
+            }
+        ]
+    }
+]

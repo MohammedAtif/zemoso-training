@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addDataFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zemoso.playerdetails.AddDataFragment"
+    android:orientation="vertical"
+    android:background="@color/flat_white"
+    android:clickable="true"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerName"
+        android:hint="Name of the player"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerAge"
+        android:hint="Age of the player"
+        android:textAlignment="center"
+        android:inputType="number" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerRank"
+        android:hint="Rank of the player"
+        android:textAlignment="center"
+        android:inputType="number" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerImageUrl"
+        android:hint="Image Url of the player"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAddDataToRealm"
+        android:text="Add"/>
+</LinearLayout>

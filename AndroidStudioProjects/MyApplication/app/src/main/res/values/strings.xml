@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="page1">First Page</string>
+    <string name="page2">Second Page</string>
+    <string name="page3">Enter somthing here</string>
+    <string name="shdata">Sh pref data</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

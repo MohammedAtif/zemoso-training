@@ -1,0 +1,19 @@
+<!-- fragment_screen_slide_page2.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/flat_green">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="100dp">
+<Button
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:text="Next Page"
+    android:layout_centerHorizontal="true"
+    />
+    </RelativeLayout>
+</ScrollView>
