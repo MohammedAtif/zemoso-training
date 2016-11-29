@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="19dp">
+    <ImageView
+        android:id="@+id/profilepicimageView"
+        android:layout_width="@dimen/profile_pic_size"
+        android:layout_height="@dimen/profile_pic_size" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="9dp"
+        android:paddingBottom="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profilepicimageView"
+        android:layout_alignBottom="@+id/profilepicimageView">
+        <TextView
+            android:id="@+id/profileName"
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:text="Helo"/>
+        <TextView
+            android:id="@+id/profileDetails"
+            android:layout_below="@+id/profileName"
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16dp"
+            android:textColor="#BFffffff"
+            android:text="Details"/>
+    </RelativeLayout>
+
+</RelativeLayout>
